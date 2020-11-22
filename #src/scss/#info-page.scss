@@ -1,0 +1,786 @@
+.info-page {
+	& .breadcrumb {
+		margin-bottom: -4px;
+	}
+
+	&.aroma {
+		& .product-advantages {
+			margin-bottom: 51px;
+		}
+
+		& .video-block {
+			margin-bottom: 136px;
+		}
+
+	}
+
+	&.oil {
+		& .benefit {
+			position: relative;
+			z-index: 9;
+		}
+	}
+
+	&.mat {
+		& .current-product {
+			margin-bottom: 0;
+		}	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-mini {
+	position: relative;
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	&__body {
+		min-height: 240px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+
+	&__title {
+		margin-top: 0;
+		color: #d19676;
+		font-family: $mainFontFamily;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1.1em;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		margin-bottom: 0.35em;
+
+		@media (max-width: $md3+px) {
+			font-size: 32px;
+		}
+	}
+
+	&__subtitle {
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		line-height: 1.1em;
+
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.current-product {
+	padding: 18px 0 20px;
+	text-align: center;
+	margin-bottom: 43px;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+
+		& > li {
+			flex: 0 1 25%;
+			padding: 0 10px;
+			margin-bottom: 54px;
+
+			@media (max-width: $md2+px) {
+				flex: 0 1 33.333%;
+			}
+
+			@media (max-width: $md3+px) {
+				flex: 0 1 50%;
+			}
+
+			@media (max-width: $md4+px) {
+				flex: 0 1 100%;
+			}
+
+			& .product-card__inner {
+				padding-top: 24px;
+			}
+
+			& .product-card__img {
+				height: 153px;
+				margin-bottom: 11px;
+			}
+
+			& .product-card__text {
+				text-transform: none;
+			}
+		}
+	}
+	&__btn {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		&.btn-default {
+			color: #496f3b;
+			border-color: #496f3b;
+			min-width: 160px;
+
+				&:hover {
+					background: rgba(#496f3b, 0.1);
+				}
+		}
+	}
+}
+
+
+
+
+
+
+
+.product-advantages {
+	position: relative;
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	&__list {
+		min-height: 256px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -76px;
+		padding: 52px 0 15px;
+
+		@media (max-width: 1160px) {
+			margin: 0;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0;
+			justify-content: center;
+		}
+
+		& > li {
+			flex: 0 1 20%;
+			text-align: center;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 40px;
+
+			&:first-child {
+				& .product-advantages__line {
+					margin-left: 27%;
+				}
+			}
+
+			&:last-child {
+				& .product-advantages__line {
+					margin-right: 27%;
+				}
+			}
+
+			@media (max-width: $md3+px) {
+				flex: 0 1 33.333%;
+			}
+
+			@media (max-width: 525px) {
+				flex: 0 1 50%;
+			}
+		}
+	}
+	&__text {
+		color: #ffffff;
+		font-family: "3satHurme-SemiBold", sans-serif;
+		font-size: 21px;
+		letter-spacing: 0.02em;
+		line-height: 1.1em;
+		padding: 0 10px;
+
+		&:first-child {
+			flex: 1 1 auto;
+		}
+
+		@media (max-width: 525px) {
+			font-size: 18px;
+		}
+
+	}
+	&__line {
+		height: 2px;
+		background-color: #ffffff;
+		margin-bottom: 4px;
+		margin-top: 4px;
+
+		@media (max-width: $md3+px) {
+			margin: 4px auto 4px !important;
+			width: 50%;
+		}
+	}
+
+	&__icon {
+		height: 74px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 16px;
+
+		@media (max-width: 525px) {
+			height: 60px;
+			margin-top: 10px;
+		}
+
+		& img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}
+
+
+
+
+
+.mini-article {
+	padding: 67px 0 67px;
+	margin-bottom: 20px;
+	&__body {
+		@media (min-width: 992px) {
+			display: flex;
+		}
+	}
+	&__column {
+		&_1 {
+			flex: 0 0 683 / 1440 * 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+			min-height: 681px;
+			padding: 70px 0 70px 15px;
+			position: relative;
+
+			@media (max-width: 1420px) {
+				min-height: 522px;
+			}
+
+			@media (max-width: $md2+px) {
+				margin-bottom: 30px;
+				align-items: start;
+				padding-right: 15px;
+			}
+
+			@media (max-width: 575px) {
+				min-height: auto;
+			}
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: -45px;
+				left: 0;
+				width: 135%;
+				height: 100%;
+				background: url('../img/info-page/aroma/text-bg-left.png') center no-repeat;
+				background-size: 100% 100%;
+
+				@media (max-width: $md2+px) {
+					width: 100%;
+					top: 0;
+					background-size: contain;
+					background-position: left;
+				}
+
+				@media (max-width: 575px) {
+					background-size: cover;
+				}
+			}
+		}
+		&_2 {
+			flex: 1 1 auto;
+			display: flex;
+			align-content: center;
+			justify-content: flex-end;
+
+			@media (max-width: $md2+px) {
+				padding-left: 15px;
+			}
+
+			& img {
+				width: 100%;
+				align-self: flex-start;
+
+				@media (max-width: 1420px) {
+					align-self: center;
+				}
+
+				@media (max-width: $md2+px) {
+					width: auto;
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+	}
+	&__text {
+		max-width: 521px;
+
+		& p {
+			line-height: 1.26em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stamps {
+	background-color: #edefee;
+	//min-height: 309px;
+	padding: 3% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 59px;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -2%;
+		align-items: center;
+
+		& > li {
+			flex: 0 1 16.666%;
+			padding: 0 2%;
+			margin: 2% 0;
+			text-align: center;
+
+			& img {
+				max-width: 100%;
+			}
+
+			@media (max-width: $md3+px) {
+				flex: 0 1 33.333%;
+			}
+
+		}
+	}
+}
+
+
+
+
+
+
+
+.recipes {
+	padding: 20px 0  114px;  
+	min-height: 670px;
+	position: relative;
+	z-index: 10;
+
+	@media (max-width: 1150px) {
+		min-height: auto;
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		left: 0;
+		bottom: -25px;
+		width: 100%;
+		height: 235px;
+		z-index: -1;
+		background: url('../img/info-page/oil/line.png') center / 100% no-repeat;
+		background-size: 100% 100%;
+		@media (max-width: $md3+px) {
+			background-size: cover;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right: -121px;
+		bottom: 118px;
+		width: 50%;
+
+		@media (max-width: 1150px) {
+			position: static;
+			text-align: center;
+			margin-top: 50px;
+			width: 100%;
+			padding: 0 15px;
+		}
+		
+		& img {
+			max-width: 100%;
+		}
+	}
+	&__title {
+		margin-bottom: 43px;
+	}
+	&__list {
+		width: 75%;
+
+		@media (max-width: 1150px) {
+			width: 100%;		
+		}
+
+		& > li {
+			margin-bottom: 7px;
+			display: flex;
+
+			@media (max-width: $md3+px) {
+				display: block;
+				margin-bottom: 25px;
+			}
+
+			&:nth-child(4) {
+				& .recipes-oil__ingredients {
+					max-width: 440px;
+				}
+			}
+
+			&:nth-child(5) {
+				& .recipes-oil__ingredients {
+					max-width: 430px;
+				}
+			}
+
+			&:nth-child(6) {
+				& .recipes-oil__ingredients {
+					max-width: 420px;
+				}
+			}
+			&:nth-child(7) {
+				& .recipes-oil__ingredients {
+					max-width: 410px;
+				}
+			}
+			&:nth-child(8) {
+				& .recipes-oil__ingredients {
+					max-width: 410px;
+				}
+			}
+			&:nth-child(9) {
+				& .recipes-oil__ingredients {
+					max-width: 420px;
+				}
+			}
+
+			&:nth-child(10) {
+				& .recipes-oil__ingredients {
+					max-width: 430px;
+				}
+			}
+
+			@media (max-width: 1150px) {
+				& .recipes-oil__ingredients {
+					max-width: none !important;
+				}
+			}
+		}
+	}
+	&__label {
+		color: #656565;
+		font-family:$mainFontFamily;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 2em;
+		flex: 0 0 calc(160px + 15%);
+		max-width: 260px;
+		padding-right: 15px;
+		text-transform: uppercase;
+		letter-spacing: 0.19em;
+	}
+	&__ingredients {
+		flex: 1 1 auto;
+	}
+	&__ingredient {
+		display: inline-flex;
+		align-items: center;
+		font-family:$mainFontFamily;
+		font-size: 13px;
+		line-height: 1.2em;
+		color: #656565;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+
+		&:not(:last-child) {
+			&:after {
+				content: '+';
+				margin: 0 10px;
+				font-size: 26px;
+			}
+
+		}
+
+		& > span {
+			font-family:$mainFontFamily;
+			font-size: 26px;
+			font-weight: 400;
+			line-height: 1.2em;
+			color: #656565;
+			padding-right: 15px;
+			margin-right: 5px;
+			position: relative;
+			&:after {
+				position: absolute;
+				top: 44%;
+				right: -16px;
+				transform: translateY(-50%);
+				font-family: 'icomoon';
+				content: "\e905";
+				color: #999999;
+				font-size: 48px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.decor-text-block {
+	padding: 13px 0 20px;
+	margin-bottom: 236px;
+	position: relative;
+
+
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 55%;
+		height: 100%;
+		background: url('../img/info-page/aroma/text-bg-left.png') center no-repeat;
+		background-size: 100% 100%;
+		z-index: -1;
+	}
+
+	&:after {
+		position: absolute;
+		content: '';
+		top: 50px;
+		left: -9px;
+		width: 65%;
+		height: 100%;
+		background: url('../img/info-page/mat/line.png') center no-repeat;
+		background-size: 100% 100%;
+		z-index: 1;
+	}
+
+	@media (max-width: 1150px) {
+		margin-bottom: 0;
+		padding-bottom: 0;
+
+		&:before, &:after {
+			display: none;
+		}	
+	}
+
+	&__body {
+		position: relative;
+		z-index: 3;
+
+		@media (max-width: 1150px) {
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: -15px;
+				width: 100%;
+				height: 100%;
+				background: url('../img/info-page/aroma/text-bg-left.png') center no-repeat;
+				background-size: 100% 100%;
+				z-index: -1;
+			}
+
+			&:after {
+				position: absolute;
+				content: '';
+				top: 50px;
+				left: -15px;
+				width: 100%;
+				height: 100%;
+				background: url('../img/info-page/mat/line.png') center no-repeat;
+				background-size: 100% 100%;
+				z-index: 1;
+			}
+		}
+
+		@media (max-width: $md3+px) {
+			&:before{
+				background-size: cover;
+				right: -15px;
+				width: 104%;
+			}	
+		}
+	}
+	&__text {
+		max-width: 500px;
+		min-height: 647px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 30px 0;
+
+		@media (max-width: 1150px) {
+			min-height: 447px;
+		}
+	}
+	&__title {
+		justify-self: flex-start;
+	}
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: 12px;
+		width: 58%;
+		z-index: 2;
+		text-align: right;
+
+		@media (max-width: 1150px) {
+			position: static;
+			margin-top: 50px;
+			width: 100%;
+			padding-left: 15px;
+		}
+
+		& img {
+			max-width: 100%;
+			margin-bottom: -1px;
+		}
+	}
+}
+
+.benefits-stretching {
+	& > li {
+		margin-bottom: 34px;
+		font-family: "3satHurme-SemiBold", sans-serif;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.block-column-5 {
+	position: relative;
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+
+	&__body {
+		padding-top: 119px;
+		padding-bottom: 82px;
+
+		@media (max-width: $md3+px) {
+			padding-top: 60px;
+			padding-bottom: 41px;
+		}
+	}
+	&__title {
+		margin-bottom: 27px;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -7.5px;
+		justify-content: center;
+
+		& > li {
+			flex: 0 1 20%;
+			padding: 0 7.5px;
+			margin-bottom: 35px;
+
+			@media (max-width: $md2+px) {
+				flex: 0 1 25%;
+			}
+
+			@media (max-width: $md3+px) {
+				flex: 0 1 33.333%;
+			}
+
+			@media (max-width: 575px) {
+				flex: 0 1 50%;
+			}
+		}
+	}
+}
+
+.simple-card {
+	&__img {
+		height: 0;
+		padding-bottom: 74%;
+		margin-bottom: 22px;
+	}
+	&__text {
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.1em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
