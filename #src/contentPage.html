@@ -1,6 +1,12 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
-    <title>Content</title>
+    <title>Raespira</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="css/style.min.css">
     <style>
         p, h2{
             font-family: 'Conv_Lato-Regular', sans-serif;
@@ -52,4 +58,8 @@
         <li><a href="info-page-oils.html">Oil</a></li>
         <li><a href="single-page-mat.html">Single Page Mat</a></li>
         <li><a href="info-page-mat.html">Mat</a></li>
-    </ol></body></html>
+        <li><a class="popup-link" href="#popup">Popup</a></li>
+    </ol>
+    @@include('_popup.html',{})
+    @@include('_js.html',{})
+</body></html>

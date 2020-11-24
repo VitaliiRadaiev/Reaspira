@@ -7,6 +7,7 @@ $(document).ready(function() {
 	document.body.classList.add('is-load');
 
 	@@include('burger.js');
+	@@include('popup.js');
 
 
 // === Проверка, поддержка браузером формата webp ==================================================================

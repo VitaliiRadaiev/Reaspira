@@ -2,7 +2,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color:  rgba(255,255,255, 0.8);
+	background-color:  #fff;
 	z-index: 50;
 	top: 0;
 	left: 0;
@@ -17,7 +17,7 @@
 		visibility: visible;
 
 		& .popup_content {
-			transform: translateY(0px);
+			transform: perspective(600px) translate(0px, 0%) rotate(0deg);
 			opacity: 1;
 		}
 	}
@@ -35,109 +35,165 @@
 	}
 
 	&_content {
-		background: #fff;
-		max-width: 109.8rem;
+		background-color: rgba(70, 123, 134, 0.16);
+		max-width: 920px;
 		position: relative;
 		width: 100%;
 		transition: all 0.8s ease 0s;
 		opacity: 0;
-		transform: translateY(-100%);
+		transform: perspective(600px) translate(0px, 100%) rotateX(45deg);
 		outline: 0;
 		text-align: center;
-	}
-
-}
-
-
-.popup-search {
-	display: flex;
-	background: #fff;
-	align-items: center;
-	border: 1px solid #000000;
-
-	&__item {
-		flex: 1 1 auto;
-
-		&:last-child {
-			flex: 0 0 22.1rem;
-
-			@media (max-width: $md3+px) {
-				flex: 0 0 10rem;
-			}
-		}
-	}
-
-	&__input {
-		height: 12.6rem;
-		padding: 1rem 5.4rem;
-		width: 100%;
-		&::placeholder {
-			color: #000000;
-			font-size: 2.4rem;
-			font-weight: 500;
-			letter-spacing: 0.5rem;
-			text-transform: uppercase;
-		}
-
-		&:focus {
-			color: #000000;
-			font-size: 2.4rem;
-			font-weight: 500;
-		}
-
-		@media (max-width: $md3+px) {
-			height: 6rem;
-			padding: 1rem 1.5rem;
-
-			&::placeholder {
-				color: #000000;
-				font-size: 1.4rem;
-				font-weight: 500;
-				letter-spacing: 0.2rem;
-				text-transform: uppercase;
-			}
-
-			&:focus {
-				color: #000000;
-				font-size: 1.4rem;
-				font-weight: 500;
-			}
-		}
-
-	}
-	&__submit {
-		height: 12.6rem;
-		width: 100%;
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: #000000;
-		font-size: 2.4rem;
-		font-weight: 500;
-		letter-spacing: 0.5rem;
-		text-transform: uppercase;
-		position: relative;
-		background: #fff;
+		padding: 52px 15px 60px;
 
-		&:active {
-			background: rgba(#000, 0.2);
+		@media (max-width: 575px) {
+			flex-direction: column-reverse;
+
 		}
 
 		&:before {
 			position: absolute;
 			content: '';
-			top: 50%;
+			bottom: 0;
 			left: 0;
-			height: 70%;
-			width: 3px;
-			background: #000;
-			transform: translateY(-50%);
-		}
+			width: 60%;
+			height: 82%;
+			z-index: -1;
+			background: url('../img/popup/3-layers.png') center no-repeat;
+			background-size: 100% 100%;
+			min-width: 460px;
 
-		@media (max-width: $md3+px) {
-			height: 6rem;
-			font-size: 1.4rem;
-			letter-spacing: 0.2rem;
+			@media (max-width: 575px) {
+				width: 100%;
+				background-size: cover;
+				min-width: auto;
+
+			}
 		}
 	}
+
+
+	&__column {
+		&_1 {
+			flex: 0 1 45%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 0 15px;
+
+			@media (max-width: 575px) {
+				justify-content: center;
+
+			}
+
+			& img {
+				max-height: 100%;
+				max-width: 100%;
+			}
+		}
+		&_2 {
+			flex: 0 1 55%;
+			min-height: 411px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			@media (max-width: 575px) {
+				min-height: auto;
+				margin-bottom: 40px;
+
+			}
+
+			& * {
+				margin-left: 0;
+			}
+
+			& h1 {
+				line-height: 1.1em;
+				color: #496f3b;
+				font-size: 52px;
+				font-weight: bold;
+				margin-top: 0;
+				margin-bottom: 0.192em;
+
+				& ~ p {
+						line-height: 1.1em;
+						color: #496f3b;
+						font-size: 31px;
+						font-weight: 400;
+						margin-bottom: 0.70em;
+
+						@media (max-width: $md3+px) {
+							font-size: 23px;
+						}
+
+				}
+
+				@media (max-width: $md3+px) {
+					font-size: 44px;
+				}
+			}
+
+
+			& hr {
+				background: #496f3b;
+				margin-top: 10px;
+				margin-bottom: 22px;
+				height: 1px;
+				width: 80%;
+				display: inline-block;
+
+				@media (max-width: $md3+px) {
+					margin-bottom: 15px;
+				}
+			}
+
+			& h2 {
+				font-family: $titleFontFamily;
+				line-height: 1.1em;
+				color: #496f3b;
+				font-size: 42px;
+				font-weight: 400;
+				letter-spacing: 0.059em;
+				margin-top: 0;
+				margin-bottom: 0.238em;
+
+				@media (max-width: $md3+px) {
+					font-size: 34px;
+				}
+
+				& ~ p {
+					max-width: 300px;
+					line-height: 1.1em;
+					color: #656565;
+					font-size: 16px;
+					font-weight: bold;
+					letter-spacing: 0.039em;
+					margin-bottom: 1.43em;
+
+					@media (max-width: $md3+px) {
+						font-size: 14px;
+					}
+				}
+			}
+
+			& p {
+				line-height: 1.1em;
+				color: #656565;
+				font-size: 16px;
+				font-weight: bold;
+				letter-spacing: 0.039em;
+				margin-bottom: 1.43em;
+			}
+
+			& .btn-buy {
+				font-size: 18px;
+				align-self: center;
+			}
+		}
+	}
+
 }
