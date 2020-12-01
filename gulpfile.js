@@ -15,7 +15,7 @@ let fileinclude = require("gulp-file-include");
 let clean_css = require("gulp-clean-css");
 let newer = require('gulp-newer');
 
-let webp = require('imagemin-webp');
+let webp = require('gulp-webp');
 let webpcss = require("gulp-webp-css");
 let webphtml = require('gulp-webp-html');
 
@@ -40,7 +40,7 @@ let path = {
 		html: [src_folder + "/*.html", "!" + src_folder + "/_*.html"],
 		js: [src_folder + "/js/app.js", src_folder + "/js/vendors.js"],
 		css: src_folder + "/scss/style.scss",
-		images: [src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}", "!**/favicon.*"],
+		images: [src_folder + "/img/**/**/*.{jpg,png,svg,gif,ico,webp}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf"
 	},
 	watch: {
@@ -111,7 +111,7 @@ function images() {
 		.pipe(
 			imagemin([
 				webp({
-					quality: 75
+					quality: 80
 				})
 			])
 		)
@@ -133,6 +133,28 @@ function images() {
 		)
 		.pipe(dest(path.build.images))
 }
+
+gulp.task('compressImg', function() {
+	return src(path.src.images)
+		.pipe(
+			webp({
+				quality: 70
+			})
+		)
+		.pipe(dest(path.build.images))
+})
+
+gulp.task('compress', function() {
+	return src(path.src.images)
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{ removeViewBox: false }],
+			interlaced: true,
+			optimizationLevel: 3 // 0 to 7
+		}))
+		.pipe(dest(path.build.images))
+})
+
 gulp.task('importImg', function() {
 	return src(path.src.images)
 		.pipe(dest(path.build.images))

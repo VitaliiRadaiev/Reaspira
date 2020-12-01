@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 	@@include('burger.js');
 	@@include('popup.js');
+	@@include('forms.js');
 
 
 // === Проверка, поддержка браузером формата webp ==================================================================

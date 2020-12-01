@@ -10,18 +10,53 @@
 	box-shadow: 0 2px 5px 0 #e7e7e7;
 
 	&__body {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		
 	}
+
+	&__row {
+		display: flex;
+
+	}
+
+	&__row_1 {
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 575px) {
+			flex-wrap: wrap;
+		}	
+	}
+
+	&__row_2 {
+		flex-direction: column;
+	}
+
 	&__logo {
-		@media (max-width: $md4+px) {
-			max-width: 110px;
+		flex: 0 0 200px;
+		margin-left: 30px;
+		margin-right: 30px;
+		max-width: 200px;
+
+		@media (max-width: $md2+px) {
+			max-width: 165px;
+			flex: 0 0 165px;
 		}
+
+		@media (max-width: 575px) {
+			flex: 0 1 100%;
+			max-width: none;
+			text-align: center;
+			margin-bottom: 10px;
+			order: -1;
+			& > a {
+				max-width: 165px;
+				display: inline-block;
+			}
+		}
+
 	}
 	&__menu {
-		flex: 1 1 auto;
-		margin: 0 20px 0 20px;
+		margin: 0 20px 0 17%;
 
 		@media (max-width: $md2+px) {
 			background: #fff;
@@ -40,7 +75,7 @@
 		}
 	}
 	&__action {
-		flex: 0 0 320px;
+		flex: 0 1 auto;
 
 		@media (max-width: $md2+px) {
 			flex: 0 0 auto;
@@ -58,8 +93,7 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
-		padding-right: 79px;
+		justify-content: center;
 
 		@media (max-width: $md2+px) {
 			display: block;
@@ -98,6 +132,19 @@
 
 		& > li {
 			margin-left: 9px;
+			display: flex;
+			align-items: center;
+
+			& > span {
+				text-transform: uppercase;
+				font-size: 12px;
+				white-space: nowrap;
+				margin-right: 10px;
+
+				@media (max-width: $md3+px) {
+					display: none;
+				}
+			}
 		}
 	}
 	&__icon {
@@ -207,4 +254,9 @@
 			}
 		}
 	}
+}
+
+
+.currency {
+	&__select {}
 }

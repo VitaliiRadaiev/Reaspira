@@ -36,7 +36,7 @@
 
 	&_content {
 		background-color: rgba(70, 123, 134, 0.16);
-		max-width: 920px;
+		max-width: 690px;
 		position: relative;
 		width: 100%;
 		transition: all 0.8s ease 0s;
@@ -45,7 +45,7 @@
 		outline: 0;
 		text-align: center;
 		display: flex;
-		padding: 52px 15px 60px;
+		padding: 39px 11.25px 45px;
 
 		@media (max-width: 575px) {
 			flex-direction: column-reverse;
@@ -62,7 +62,7 @@
 			z-index: -1;
 			background: url('../img/popup/3-layers.png') center no-repeat;
 			background-size: 100% 100%;
-			min-width: 460px;
+			min-width: 345px;
 
 			@media (max-width: 575px) {
 				width: 100%;
@@ -78,9 +78,9 @@
 		&_1 {
 			flex: 0 1 45%;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 			align-items: center;
-			padding: 0 15px;
+			padding: 30px 30px; 
 
 			@media (max-width: 575px) {
 				justify-content: center;
@@ -94,7 +94,7 @@
 		}
 		&_2 {
 			flex: 0 1 55%;
-			min-height: 411px;
+			min-height: 308.25px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -103,7 +103,7 @@
 
 			@media (max-width: 575px) {
 				min-height: auto;
-				margin-bottom: 40px;
+				margin-bottom: 30px;
 
 			}
 
@@ -114,7 +114,7 @@
 			& h1 {
 				line-height: 1.1em;
 				color: #496f3b;
-				font-size: 52px;
+				font-size: 39px;
 				font-weight: bold;
 				margin-top: 0;
 				margin-bottom: 0.192em;
@@ -122,32 +122,32 @@
 				& ~ p {
 						line-height: 1.1em;
 						color: #496f3b;
-						font-size: 31px;
+						font-size: 23.25px;
 						font-weight: 400;
 						margin-bottom: 0.70em;
 
 						@media (max-width: $md3+px) {
-							font-size: 23px;
+							font-size: 17.25px;
 						}
 
 				}
 
 				@media (max-width: $md3+px) {
-					font-size: 44px;
+					font-size: 33px;
 				}
 			}
 
 
 			& hr {
 				background: #496f3b;
-				margin-top: 10px;
-				margin-bottom: 22px;
+				margin-top: 7.5px;
+				margin-bottom: 16.5px;
 				height: 1px;
 				width: 80%;
 				display: inline-block;
 
 				@media (max-width: $md3+px) {
-					margin-bottom: 15px;
+					margin-bottom: 11.25px;
 				}
 			}
 
@@ -155,21 +155,21 @@
 				font-family: $titleFontFamily;
 				line-height: 1.1em;
 				color: #496f3b;
-				font-size: 42px;
+				font-size: 31.05px;
 				font-weight: 400;
 				letter-spacing: 0.059em;
 				margin-top: 0;
 				margin-bottom: 0.238em;
 
 				@media (max-width: $md3+px) {
-					font-size: 34px;
+					font-size: 33px;
 				}
 
 				& ~ p {
 					max-width: 300px;
 					line-height: 1.1em;
 					color: #656565;
-					font-size: 16px;
+					font-size: 12px;
 					font-weight: bold;
 					letter-spacing: 0.039em;
 					margin-bottom: 1.43em;
@@ -183,14 +183,14 @@
 			& p {
 				line-height: 1.1em;
 				color: #656565;
-				font-size: 16px;
+				font-size: 12px;
 				font-weight: bold;
 				letter-spacing: 0.039em;
 				margin-bottom: 1.43em;
 			}
 
 			& .btn-buy {
-				font-size: 18px;
+				font-size: 13.5px;
 				align-self: center;
 			}
 		}

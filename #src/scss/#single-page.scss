@@ -122,6 +122,10 @@
 		flex-wrap: wrap;
 		margin-bottom: 20px;
 
+		@media (max-width: 575px) {
+			flex-wrap: nowrap;
+		}
+
 		& > li {
 			flex: 0 0 75px;
 			text-align: center;
@@ -135,12 +139,26 @@
 
 			&:not(:last-child) {
 				margin-right: 37px;
+
+				@media (max-width: 575px) {
+					margin-right: 5px;
+				}
 			}
+
+			@media (max-width: 575px) {
+				flex: 0 1 25%;
+				font-size: 9px;;
+			}
+
 
 			& > span {
 				display: inline-block;
 				height: 33px;
 				margin-bottom: 8px;
+
+				@media (max-width: 575px) {
+					height: 28px;
+				}
 
 				& img {
 					height: 100%;
