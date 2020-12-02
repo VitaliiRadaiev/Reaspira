@@ -164,7 +164,7 @@ strong {
 	line-height: 1.1em;
 	position: relative;
 
-	& > div {
+	& > i {
 		position: absolute;
 		top: 50%;
 		left: 95px;
@@ -250,7 +250,8 @@ button.btn-default {
 			font-size: 30px
 		}
 
-		& > div {
+		& > i {
+			display: inline-block;
 			position: absolute;
 			top: 50%;
 			left: 95px;
@@ -316,6 +317,10 @@ button.btn-default {
 		@media (max-width: 525px) {
 			font-size: 16px;
 		}
+	}
+
+	& a {
+		color: #1781f0;
 	}
 
 	& ol {}

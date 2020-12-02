@@ -90,7 +90,7 @@ $('img.img-svg').each(function(){
 
 
 //Spollers
-
+function spollerStart() {
 	let spollers = document.querySelectorAll("._spoller");
 	if (spollers.length > 0) {
 		for (let index = 0; index < spollers.length; index++) {
@@ -118,7 +118,8 @@ $('img.img-svg').each(function(){
 			});
 		}
 	}
-
+}
+spollerStart();
 // === // Spollers ==================================================================
 
 

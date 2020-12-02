@@ -36,5 +36,6 @@ $(document).ready(function() {
 @@include('#video.js');
 @@include('#slider.js');
 @@include('#gallery-slider.js');
+@@include('#recipes.js');
 
 });

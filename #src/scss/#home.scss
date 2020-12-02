@@ -20,28 +20,42 @@ body.webp {
 		/*background: url('../img/home/content-decor.png') center no-repeat;
 		background-size: auto 100%;*/
 
-		&:before{
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 30%;
-			z-index: -1;
-			background: url('../img/home/pattern_2.png') center no-repeat;
-			background-size: contain;
-		}
+		& .container {
+			position: relative;
+			&:before{
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 30%;
+				z-index: -1;
+				background: url('../img/home/pattern_2.png') center no-repeat;
+				background-size: 100% 100%;
 
-		&:after{
-			position: absolute;
-			content: '';
-			top: 0;
-			right: 0;
-			height: 100%;
-			width: 30%;
-			z-index: -1;
-			background: url('../img/home/pattern_1.png') center no-repeat;
-			background-size: contain;
+				@media (max-width: $md3+px) {
+					background-size: contain;
+					width: 100%;
+				}
+			}
+
+			&:after{
+				position: absolute;
+				content: '';
+				top: 0;
+				right: 0;
+				height: 100%;
+				width: 30%;
+				z-index: -1;
+				background: url('../img/home/pattern_1.png') center no-repeat;
+				background-size: 100% 100%;
+
+				@media (max-width: $md3+px) {
+					background-size: contain;
+					width: 100%;
+					display: none;
+				}
+			}
 		}
 	}
 	&__text-block {}
@@ -121,8 +135,12 @@ body.webp {
 	color: #496f3b;
 	margin-bottom: 22px;
 
-	@media (max-width: $md2+px) {
+/*	@media (max-width: $md2+px) {
 		font-size: 8px;
+	}*/
+
+	@media (max-width: $md3+px) {
+		padding: 0 0 3em;
 	}
 
 	& > .container {
@@ -151,11 +169,15 @@ body.webp {
 		}
 
 		& > li {
-			flex: 0 1 25%;
+			flex: 0 1 33.333%;
 			padding: 0 1.5em;
 
 			@media (max-width: $md3+px) {
-				flex: 0 1 50%;
+				flex: 0 1 100%;
+
+				&:nth-child(even) {
+					background: rgba(62, 101, 99, 0.1);
+				}
 			}
 		}
 	}
@@ -166,6 +188,10 @@ body.webp {
 		text-align: center;
 		padding-bottom: 5.3em;
 		position: relative;
+
+		@media (max-width: $md3+px) {
+			padding: 2em 0 2em;
+		}
 
 		@media (min-width: 992px) {
 			&:hover {
@@ -192,6 +218,10 @@ body.webp {
 			left: 50%;
 			transform: translate(-50%, 100%);
 
+			@media (max-width: $md3+px) {
+				display: none;
+			}
+
 		}
 	}
 	&__img {
@@ -203,6 +233,10 @@ body.webp {
 		& img {
 			max-height: 100%;
 			max-width: 100%;
+		}
+
+		@media (max-width: $md3+px) {
+			display: none;
 		}
 	}
 
@@ -364,15 +398,12 @@ body.webp {
 
 		& > li {
 			padding: 0 10px;
-			flex: 0 1 20%;
+			flex: 0 1 16.666%;
 
 			@media (max-width: $md2+px) {
 				flex: 0 1 33.333%;
 			}
 
-			@media (max-width: $md3+px) {
-				flex: 0 1 50%;
-			}
 
 			@media (max-width: 1510px) {
 				&:first-child {
@@ -465,6 +496,15 @@ body.webp {
 		& img {
 			height: 100%;
 		}
+
+		@media (max-width: $md3+px) {
+			height: 48px;
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: $md4+px) {
+			height: 40px;
+		}
 	}
 	&__item-title {
 		color: #ffffff;
@@ -473,6 +513,14 @@ body.webp {
 		line-height: 1.1em;
 		position: relative;
 		display: inline-block;
+
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+		}
 
 		&:after {
 			position: absolute;
@@ -574,6 +622,11 @@ body.webp {
 	padding: 51px 0;
 	margin-bottom: 35px;
 
+	// @media (max-width: $md3+px) {
+	// 	position: relative;
+	// 	height: 700px;
+	// }
+
 	&.background-gray {
 		background-color: #edefee;
 		margin-bottom: 0;
@@ -587,10 +640,25 @@ body.webp {
 	& .swiper-container {
 		margin: 0 -15px;
 		padding: 0 15px;
+
+		@media (max-width: $md3+px) {
+			 height: 900px;
+			 padding: 0;
+			 margin: 0;
+		}
+
+		@media (max-width: $md4+px) {
+				 height: 700px;
+		}
 	}
 
 	& .swiper-slide {
 		height: auto;
+
+		@media (max-width: $md3+px) {
+			height: calc((100% - 60px) / 2);
+			margin-bottom: 20px;
+		}
 	}
 
 
@@ -606,6 +674,7 @@ body.webp {
 			margin-bottom: 50px;
 			text-align: center;
 		}
+
 	}
 
 	&__btn {
@@ -630,6 +699,10 @@ body.webp {
 			}
 		}
 
+		@media (max-width: $md4+px) {
+			top: 52%;
+		}
+
 		& > span {
 			width: 12px;
 			display: flex;
@@ -642,6 +715,8 @@ body.webp {
 	}
 	&__btn-next {
 		right: 2px;
+
+
 	}
 	&__btn-prev {
 		left: 2px;
@@ -666,7 +741,7 @@ body.webp {
 	height: 100%;
 	&__inner {
 		padding: 31px 15px 25px;
-		background-color: #edefee;
+		//background-color: #edefee;
 		text-align: center;
 		flex: 1 1 auto;
 	}
@@ -674,10 +749,15 @@ body.webp {
 		height: 212px;
 		text-align: center;
 		margin-bottom: 6px;
+		display: block;
 
 		& img {
 			max-height: 100%;
 			max-width: 100%;
+		}
+
+		@media (max-width: $md4+px) {
+			height: 150px;
 		}
 	}
 	&__title {
@@ -686,7 +766,15 @@ body.webp {
 		font-size: 22px;
 		font-weight: 400;
 		line-height: 1.1em;
-		margin-bottom: 12px;
+		margin-bottom: 0.54em;
+
+		& > a {
+			color: #496f3b;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
 	}
 
 	&__text {
@@ -697,11 +785,20 @@ body.webp {
 		margin: 0 auto;
 		max-width: 220px;
 
+		& > a {
+			color: #525252;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 9px;
+		}
+
 	}
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		align-items: center;
 	}
 	&__btn {
 		display: inline-flex;
@@ -710,12 +807,16 @@ body.webp {
 		font-size: 16px;
 		font-weight: 400;
 		text-transform: uppercase;
-		letter-spacing: 0.68px;
+		letter-spacing: 0.0425em;
 		position: relative;
-		margin-right: 20px;
-		padding: 14px 0 2px;
+		margin-right: 1.25em;
+		padding: 0.875em 0 2px;
 		flex: 0 0 auto;
 		align-items: center;
+
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+		}
 
 		&:hover {
 			&:before {
@@ -736,8 +837,8 @@ body.webp {
 		}
 
 		& span {
-			width: 18px;
-			margin-left: 18px;
+			width: 1.125em;
+			margin-left: 1.125em;
 
 			& img {
 				width: 100%;
@@ -750,7 +851,11 @@ body.webp {
 		font-family: "MyriadPro", sans-serif;
 		font-size: 19px;
 		font-weight: 400;
-		padding: 14px 0 2px;
+		padding: 0.73em 0 2px;
+
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -941,6 +1046,17 @@ body.webp {
 		font-weight: 400;
 		text-transform: uppercase;
 
+		& a {
+			color: #474747;
+			font-size: 18px;
+			font-weight: 400;
+			text-transform: uppercase;
+
+			&:hover {
+				color: #496f3b;
+			}
+		}
+
 		@media (max-width: $md2+px) {
 			max-width: 300px;
 			width: 100%;
@@ -984,6 +1100,7 @@ body.webp {
 			box-shadow: 9px 11px 25px rgba(47, 66, 40, 0.15);
 		}
 
+	
 		&-list {
 			& > li {
 				margin-bottom: 7px;
