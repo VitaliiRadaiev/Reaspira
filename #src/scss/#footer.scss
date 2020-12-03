@@ -27,14 +27,14 @@
 		// }
 
 		& img {
-			//object-position: bottom;
+			object-position: top;
 		}
 	}
 }
 
 
 .footer {
-
+	padding-top: 250px;
 	&__title {
 		color: #31444b;
 		font-family: "3satHurme-SemiBold", sans-serif;
