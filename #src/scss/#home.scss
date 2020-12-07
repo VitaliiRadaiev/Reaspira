@@ -1,62 +1,10 @@
-body.webp {
-	& .home__content {
-		&:before{
-			background: url('../img/home/pattern_2.webp') center no-repeat;
-			background-size: contain;
-		}
-
-		&:after{
-			background: url('../img/home/pattern_1.webp') center no-repeat;
-			background-size: contain;
-		}
-	}
-}
 
 .home {
 	&__content {
 		margin-bottom: 83px;
 		position: relative;
 		z-index: 10;
-		/*background: url('../img/home/content-decor.png') center no-repeat;
-		background-size: auto 100%;*/
 
-		& .container {
-			position: relative;
-			&:before{
-				position: absolute;
-				content: '';
-				top: 0;
-				left: 0;
-				height: 100%;
-				width: 30%;
-				z-index: -1;
-				background: url('../img/home/pattern_2.png') center no-repeat;
-				background-size: cover;
-
-				@media (max-width: $md3+px) {
-					background-size: contain;
-					width: 100%;
-				}
-			}
-
-			&:after{
-				position: absolute;
-				content: '';
-				top: 0;
-				right: 0;
-				height: 100%;
-				width: 30%;
-				z-index: -1;
-				background: url('../img/home/pattern_1.png') center no-repeat;
-				background-size: cover;
-
-				@media (max-width: $md3+px) {
-					background-size: contain;
-					width: 100%;
-					display: none;
-				}
-			}
-		}
 	}
 	&__text-block {}
 }
@@ -892,7 +840,7 @@ body.webp {
 
 
 .benefit {
-	padding: 79px 0 86px;
+	padding: 79px 0 10px;
 
 	@media (max-width: $md3+px) {
 		padding-bottom: 0;

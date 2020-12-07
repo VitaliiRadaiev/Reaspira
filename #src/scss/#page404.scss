@@ -1,5 +1,12 @@
 .page404 {
+	& .products-category {
+		margin-bottom: 45px;
+		padding-bottom: 0.8em;
 
+		@media (min-width: 768px) {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .error-message {

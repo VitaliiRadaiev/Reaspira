@@ -1,3 +1,11 @@
+.single-page {
+	& .slider {
+		@media (max-width: $md3+px) {
+			margin-bottom: 0;
+		}
+	}
+}
+
 .product-info {
 	margin-bottom: 60px;
 
