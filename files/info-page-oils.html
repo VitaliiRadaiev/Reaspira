@@ -13,67 +13,112 @@
 	<body>
 		<div class="top-line">
 	<div class="top-line__body container">
-		<div class="top-line__logo logo">
-			<a href="#">
-				<img src="img/logo/logo-raespira-copper.png" alt="logo">
-			</a>
-		</div>
-		<nav class="top-line__menu menu">
-			<ul class="menu__list">
-				<li>
-					<a href="#" class="menu__link">Shop</a>
-				</li>
-				<li>
-					<a href="#" class="menu__link">Raespira</a>
-				</li>
-				
-				<li>
-					<a href="#" class="menu__link">The Art of Breath</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="top-line__action action">
-			<ul class="action__list">
-				<li>
-					<form action="/" class="form-search">
-						<input id="search" type="text" class="form-search__input">
-						<label for="search" class="form-search__label">
+		<div class="top-line__row top-line__row_1">
+			<div class="top-line__action action">
+				<ul class="action__list">				
+					 <li>
+						<span>we ship to whole europe</span>
+						<form action="/" class="currency">
+							<select name="currency" id="currency" class="currency__select">
+								<option  value="EUR" selected>€(EUR)</option>
+								<option  value="USD">$(USD)</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<a href="#" class="action__icon">
 							<span>
-								<img src="img/icons/search.svg" alt="search">
+								<img src="img/icons/instagramBlack.svg" alt="bag"> 
 							</span>
-						</label>
-						<button type="submit" class="form-search__submit">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="top-line__logo logo">
+				<a href="#">
+					  <img src="img/logo/logo-raespira-copper2.svg" alt="logo">
+
+				</a>
+			</div>
+			<div class="top-line__action action">
+				<ul class="action__list">
+					<!-- 				<li>
+										<form action="/" class="form-search">
+											<input id="search" type="text" class="form-search__input">
+											<label for="search" class="form-search__label">
+												<span>
+													<img src="img/icons/search.svg" alt="search">
+												</span>
+											</label>
+											<button type="submit" class="form-search__submit">
+												<span>
+													<img src="img/icons/search.svg" alt="submit">
+												</span>
+											</button>
+										</form>
+									</li>
+					 -->				
+					 <li>
+						<a href="#" class="action__icon">
 							<span>
-								<img src="img/icons/search.svg" alt="submit">
+								<img src="img/icons/user.svg" alt="user">
 							</span>
-						</button>
-					</form>
-				</li>
-				<li>
-					<a href="#" class="action__icon">
-						<span>
-							<img src="img/icons/user.svg" alt="user">
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="action__icon">
-						<span>
-							<img src="img/icons/basket-black.svg" alt="bag"> 
-						</span>
-					</a>
-				</li>
-				<li>
-					<div class="top-line__burger burger-wrap">
-						<div class="burger" data-activEl="menu">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="action__icon">
+							<span>
+								<img src="img/icons/basket-black.svg" alt="bag"> 
+							</span>
+
+							<div class="mini-basket">
+								<h3 class="mini-basket__title title-3">you`ve got great taste!</h3>
+								<p class="mini-basket__subtitle">The article was added to the basket.</p>
+								<ul class="mini-basket__list">
+									<li>
+										<div class="mini-basket__img">
+											<img src="img/single-page/mats/slider01.png" alt="img">
+										</div>
+										<div class="mini-basket__item-suptitle">premium yoga mat</div>
+										<div class="mini-basket__item-title">Green Marble</div>
+										<div class="mini-basket__item-price">78€</div>
+									</li> 
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<div class="top-line__burger burger-wrap">
+							<div class="burger" data-activEl="menu">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-line__row top-line__row_2">
+			<nav class="top-line__menu menu">
+				<ul class="menu__list">
+					<li>
+						<a href="#" class="menu__link">Aroma Diffusers</a>
+					</li>
+					<li>
+						<a href="#" class="menu__link">Premium Yoga Mats</a>
+					</li>
+					
+					<li>
+						<a href="#" class="menu__link">Essential Oils</a>
+					</li>
+					<li>
+						<a href="#" class="menu__link">About us</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
@@ -90,7 +135,11 @@
 
 			<header class="hero-mini">
 				<div class="hero-mini__img ibg">
-					<img src="img/info-page/horo-mini-bg.jpg" alt="bg">
+					
+					<picture>
+					  <source type="image/webp" srcset="img/info-page/horo-mini-bg.webp"> 
+					  <img src="img/info-page/horo-mini-bg.jpg" alt="bg">
+					</picture>
 				</div>
 				<div class="hero-mini__body container">
 					<h1 class="hero-mini__title">
@@ -106,207 +155,237 @@
 					<div class="container">
 						<ul class="current-product__list">
 							<li>
-								<a href="#" class="product-card">
+								<div class="product-card">
 									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card01.png" alt="product">
-										</div>
-										<div class="product-card__title">Inspiring Lemon</div>
+										<a href="#" class="product-card__img">
+											<!-- <picture>
+											  <source type="image/webp" srcset="img/info-page/oil/card01.webp"> 
+											  <img src="img/info-page/oil/card01.png" alt="product">
+											</picture> -->
+											 <img src="img/product-card/oil1.png" alt="product">
+										</a>
+										<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
 										<div class="product-card__text">
+											<a href="#">
 											Inspiring, Energising, 
 											bringing you to presence
+											</a>
 										</div>
 									</div>
 									<div class="product-card__bottom">
-										<object>
 											<a href="#" class="product-card__btn">
 												I LOVE IT
 												<span>
 													<img src="img/icons/basket.svg" alt="icon">
 												</span>
 											</a>
-										</object>
 										<span class="product-card__price">12€</span>
 									</div>
-								</a>
+								</div>
 							</li> 
 							<li>
-								<a href="#" class="product-card">
+								<div class="product-card">
 									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card01.png" alt="product">
-										</div>
-										<div class="product-card__title">Sweet Orange</div>
+										<a href="#" class="product-card__img">
+											<!-- <picture>
+											  <source type="image/webp" srcset="img/info-page/oil/card01.webp"> 
+											  <img src="img/info-page/oil/card01.png" alt="product">
+											</picture> -->
+											<img src="img/product-card/oil1.png" alt="product">
+										</a>
+										<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
 										<div class="product-card__text">
-											Sweet, Mood uplifting,
-											brings peace and happiness 
-										</div>
-									</div>
-									<div class="product-card__bottom">
-										<object>
-											<a href="#" class="product-card__btn">
-												I LOVE IT
-												<span>
-													<img src="img/icons/basket.svg" alt="icon">
-												</span>
-											</a>
-										</object>
-										<span class="product-card__price">12€</span>
-									</div>
-								</a>
-							</li> 
-							<li>
-								<a href="#" class="product-card">
-									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card02.png" alt="product">
-										</div>
-										<div class="product-card__title">Relieving Eucalyptus </div>
-										<div class="product-card__text">
-											Sweet, Mood uplifting,
-											brings peace and happiness 
-
-										</div>
-									</div>
-									<div class="product-card__bottom">
-										<object>
-											<a href="#" class="product-card__btn">
-												I LOVE IT
-												<span>
-													<img src="img/icons/basket.svg" alt="icon">
-												</span>
-											</a>
-										</object>
-										<span class="product-card__price">12€</span>
-									</div>
-								</a>
-							</li> 
-							<li>
-								<a href="#" class="product-card">
-									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card03.png" alt="product">
-										</div>
-										<div class="product-card__title">Relaxing Lavender</div>
-										<div class="product-card__text">
-											Sweet, Mood uplifting,
-											brings peace and happiness 
-										</div>
-									</div>
-									<div class="product-card__bottom">
-										<object>
-											<a href="#" class="product-card__btn">
-												I LOVE IT
-												<span>
-													<img src="img/icons/basket.svg" alt="icon">
-												</span>
-											</a>
-										</object>
-										<span class="product-card__price">12€</span>
-									</div>
-								</a>
-							</li> 
-							<li>
-								<a href="#" class="product-card">
-									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card01.png" alt="product">
-										</div>
-										<div class="product-card__title">Inspiring Lemon</div>
-										<div class="product-card__text">
+											<a href="#">
 											Inspiring, Energising, 
 											bringing you to presence
+											</a>
 										</div>
 									</div>
 									<div class="product-card__bottom">
-										<object>
 											<a href="#" class="product-card__btn">
 												I LOVE IT
 												<span>
 													<img src="img/icons/basket.svg" alt="icon">
 												</span>
 											</a>
-										</object>
 										<span class="product-card__price">12€</span>
 									</div>
-								</a>
+								</div>
 							</li> 
 							<li>
-								<a href="#" class="product-card">
+								<div class="product-card">
 									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card01.png" alt="product">
-										</div>
-										<div class="product-card__title">Sweet Orange</div>
+										<a href="#" class="product-card__img">
+										<!-- 	<picture>
+											  <source type="image/webp" srcset="img/info-page/oil/card02.webp"> 
+											  <img src="img/info-page/oil/card02.png" alt="product">
+											</picture> -->
+											<img src="img/product-card/oil2.png" alt="product">
+										</a>
+										<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
 										<div class="product-card__text">
-											Sweet, Mood uplifting,
-											brings peace and happiness 
+											<a href="#">
+											Inspiring, Energising, 
+											bringing you to presence
+											</a>
 										</div>
 									</div>
 									<div class="product-card__bottom">
-										<object>
 											<a href="#" class="product-card__btn">
 												I LOVE IT
 												<span>
 													<img src="img/icons/basket.svg" alt="icon">
 												</span>
 											</a>
-										</object>
 										<span class="product-card__price">12€</span>
 									</div>
-								</a>
+								</div>
 							</li> 
 							<li>
-								<a href="#" class="product-card">
+								<div class="product-card">
 									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card02.png" alt="product">
-										</div>
-										<div class="product-card__title">Relieving Eucalyptus </div>
+										<a href="#" class="product-card__img">
+											<!-- <picture>
+											  <source type="image/webp" srcset="img/info-page/oil/card03.webp"> 
+											  <img src="img/info-page/oil/card03.png" alt="product">
+											</picture> -->
+											<img src="img/product-card/oil3.png" alt="product">
+										</a>
+										<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
 										<div class="product-card__text">
-											Sweet, Mood uplifting,
-											brings peace and happiness 
-
+											<a href="#">
+											Inspiring, Energising, 
+											bringing you to presence
+											</a>
 										</div>
 									</div>
 									<div class="product-card__bottom">
-										<object>
 											<a href="#" class="product-card__btn">
 												I LOVE IT
 												<span>
 													<img src="img/icons/basket.svg" alt="icon">
 												</span>
 											</a>
-										</object>
 										<span class="product-card__price">12€</span>
 									</div>
-								</a>
+								</div>
 							</li> 
-							<li>
-								<a href="#" class="product-card">
-									<div class="product-card__inner">
-										<div class="product-card__img">
-											<img src="img/info-page/oil/card03.png" alt="product">
-										</div>
-										<div class="product-card__title">Relaxing Lavender</div>
-										<div class="product-card__text">
-											Sweet, Mood uplifting,
-											brings peace and happiness 
-										</div>
+						<li>
+							<div class="product-card">
+								<div class="product-card__inner">
+									<a href="#" class="product-card__img">
+										<!-- <picture>
+										  <source type="image/webp" srcset="img/info-page/oil/card01.webp"> 
+										  <img src="img/info-page/oil/card01.png" alt="product">
+										</picture> -->
+										 <img src="img/product-card/oil1.png" alt="product">
+									</a>
+									<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
+									<div class="product-card__text">
+										<a href="#">
+										Inspiring, Energising, 
+										bringing you to presence
+										</a>
 									</div>
-									<div class="product-card__bottom">
-										<object>
-											<a href="#" class="product-card__btn">
-												I LOVE IT
-												<span>
-													<img src="img/icons/basket.svg" alt="icon">
-												</span>
-											</a>
-										</object>
-										<span class="product-card__price">12€</span>
+								</div>
+								<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+									<span class="product-card__price">12€</span>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="product-card">
+								<div class="product-card__inner">
+									<a href="#" class="product-card__img">
+										<!-- <picture>
+										  <source type="image/webp" srcset="img/info-page/oil/card01.webp"> 
+										  <img src="img/info-page/oil/card01.png" alt="product">
+										</picture> -->
+										<img src="img/product-card/oil1.png" alt="product">
+									</a>
+									<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
+									<div class="product-card__text">
+										<a href="#">
+										Inspiring, Energising, 
+										bringing you to presence
+										</a>
 									</div>
-								</a>
-							</li> 
+								</div>
+								<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+									<span class="product-card__price">12€</span>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="product-card">
+								<div class="product-card__inner">
+									<a href="#" class="product-card__img">
+									<!-- 	<picture>
+										  <source type="image/webp" srcset="img/info-page/oil/card02.webp"> 
+										  <img src="img/info-page/oil/card02.png" alt="product">
+										</picture> -->
+										<img src="img/product-card/oil2.png" alt="product">
+									</a>
+									<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
+									<div class="product-card__text">
+										<a href="#">
+										Inspiring, Energising, 
+										bringing you to presence
+										</a>
+									</div>
+								</div>
+								<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+									<span class="product-card__price">12€</span>
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="product-card">
+								<div class="product-card__inner">
+									<a href="#" class="product-card__img">
+										<!-- <picture>
+										  <source type="image/webp" srcset="img/info-page/oil/card03.webp"> 
+										  <img src="img/info-page/oil/card03.png" alt="product">
+										</picture> -->
+										<img src="img/product-card/oil3.png" alt="product">
+									</a>
+									<div class="product-card__title"><a href="#">Inspiring Lemon</a></div>
+									<div class="product-card__text">
+										<a href="#">
+										Inspiring, Energising, 
+										bringing you to presence
+										</a>
+									</div>
+								</div>
+								<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+									<span class="product-card__price">12€</span>
+								</div>
+							</div>
+						</li> 
 
 						</ul>
 						<a href="#" class="btn-default current-product__btn">See all</a>
@@ -316,22 +395,41 @@
 					<div class="container">
 						<ul class="stamps__list">
 							<li>
-								<img src="img/info-page/oil/signet01.png" alt="icon">
+								
+								<picture>
+								  <source type="image/webp" srcset="img/info-page/oil/signet01.webp"> 
+								  <img src="img/info-page/oil/signet01.png" alt="icon">
+								</picture>
 							</li>
 							<li>
-								<img src="img/info-page/oil/signet02.png" alt="icon">
+								<picture>
+								  <source type="image/webp" srcset="img/info-page/oil/signet02.webp"> 
+								  <img src="img/info-page/oil/signet02.png" alt="icon">
+								</picture>
 							</li>
 							<li>
-								<img src="img/info-page/oil/signet03.png" alt="icon">
+								<picture>
+								  <source type="image/webp" srcset="img/info-page/oil/signet03.webp"> 
+								  <img src="img/info-page/oil/signet03.png" alt="icon">
+								</picture>
 							</li>
 							<li>
-								<img src="img/info-page/oil/signet04.png" alt="icon">
+								<picture>
+								  <source type="image/webp" srcset="img/info-page/oil/signet04.webp"> 
+								  <img src="img/info-page/oil/signet04.png" alt="icon">
+								</picture>
 							</li>
 							<li>
-								<img src="img/info-page/oil/signet05.png" alt="icon">
+								<picture>
+								  <source type="image/webp" srcset="img/info-page/oil/signet05.webp"> 
+								  <img src="img/info-page/oil/signet05.png" alt="icon">
+								</picture>
 							</li>
 							<li>
-								<img src="img/info-page/oil/signet06.png" alt="icon">
+								<picture>
+								  <source type="image/webp" srcset="img/info-page/oil/signet06.webp"> 
+								  <img src="img/info-page/oil/signet06.png" alt="icon">
+								</picture>
 							</li>
 						</ul>
 					</div>
@@ -342,9 +440,9 @@
 						<h2 class="recipes__title title-2">
 							Bledns we love. <br>
  							And you will too.
- 							<div>health</div>
+ 							<i>health</i>
 						</h2>
-						<ul class="recipes__list">
+						<ul class="recipes__list ">
 							<li>
 								<div class="recipes__label">antibacnerial</div>
 								<div class="recipes__ingredients">
@@ -504,7 +602,11 @@
 						</ul>
 					</div>
 					<div class="recipes__img">
-						<img src="img/info-page/oil/text-img.png" alt="img">
+						
+						<picture>
+						  <source type="image/webp" srcset="img/info-page/oil/text-img.webp"> 
+						  <img src="img/info-page/oil/text-img.png" alt="img">
+						</picture>
 					</div>
 				</section>
 
@@ -662,34 +764,40 @@
 					</div>
 				</section>
 			</main>
-			<footer class="footer">	
+			<footer class="footer">
 	<div class="footer__bg ibg">
-		<img src="img/footer/footer-bg.jpg" alt="">
+
+		<picture>
+			<source media="(min-width: 768px)" type="image/webp" srcset="img/footer/footer-bg2.webp">
+			<source type="image/webp" srcset="img/footer/footer-mob.jpg">
+			<img src="img/footer/footer-bg2.jpg" alt="bg">
+		</picture>
 	</div>
 	<div class="container">
-		<div class="footer__title">
+		<!-- <div class="footer__title">
 			We Bring Nature 
-			to Your Doorstep
-		</div>
+			to Doorstep
+		</div> -->
 		<div class="footer__content">
 			<div class="footer__row footer__row_1">
 				<div class="footer__logo">
 					<a href="#">
-						<img src="img/logo/footer_logo.png" alt="logo">
+						<img src="img/logo/logo-raespira-white2.svg" alt="logo">
 					</a>
 				</div>
 				<a href="#" class="footer__btn btn-default">Let’s Chat on Instagram</a>
 			</div>
 			<div class="footer__row footer__row_2">
 				<div class="footer__column footer__column_1">
-					<div class="footer__title-link"><a href="#">Shop</a></div>
 					<div class="footer__title-link"><a href="#">About Us</a></div>
-					<div class="footer__title-link"><a href="#">Blog</a></div>
+					<div class="footer__title-link"><a href="#">Shipping & Returns</a></div>
+					<div class="footer__title-link"><a href="#">GDPR</a></div>
+
 				</div>
 				<div class="footer__column footer__column_2">
-					<div class="footer__title-link"><a href="#">Shipping & Returns</a></div>
-					<div class="footer__title-link"><a href="#">Press & Media</a></div>
-					<div class="footer__title-link"><a href="#">GDPR</a></div>
+					<div class="footer__title-link"><a href="#">aroma diffusers</a></div>
+					<div class="footer__title-link"><a href="#">premium yoga mats</a></div>
+					<div class="footer__title-link"><a href="#">essential oils</a></div>
 				</div>
 
 				<div class="footer__column footer__column_3">
@@ -702,8 +810,8 @@
 							raespira_aroma_diffusers
 						</a>
 					</div>
-					<div class="footer__social-link">
-						<a href="#">
+					<div class="footer__social-link footer__social-link_mail">
+						<a href="mailto:info@raespira.com">
 							<span>
 								<img src="img/icons/mail-letter-svgrepo-com.svg" alt="letter">
 							</span>
@@ -728,7 +836,7 @@
 			</div>
 			<div class="footer__row footer__row_3">
 				<div class="footer__copy">
-					Copyright @ 2020. <strong>Raespira International s. r. o.</strong> All rights reserved 
+					Copyright @ 2020. <strong>Raespira International s. r. o.</strong> All rights reserved
 				</div>
 			</div>
 		</div>

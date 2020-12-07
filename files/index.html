@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-		<head>
+	<head>
 		<meta charset="UTF-8">
 		<title>Raespira</title>
 		<meta name="format-detection" content="telephone=no">
@@ -10,143 +10,204 @@
 		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
-	<body>
-		<div class="top-line">
+
+<body>
+	<div class="top-line">
 	<div class="top-line__body container">
-		<div class="top-line__logo logo">
-			<a href="#">
-				<img src="img/logo/logo-raespira-copper.png" alt="logo">
-			</a>
-		</div>
-		<nav class="top-line__menu menu">
-			<ul class="menu__list">
-				<li>
-					<a href="#" class="menu__link">Shop</a>
-				</li>
-				<li>
-					<a href="#" class="menu__link">Raespira</a>
-				</li>
-				
-				<li>
-					<a href="#" class="menu__link">The Art of Breath</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="top-line__action action">
-			<ul class="action__list">
-				<li>
-					<form action="/" class="form-search">
-						<input id="search" type="text" class="form-search__input">
-						<label for="search" class="form-search__label">
+		<div class="top-line__row top-line__row_1">
+			<div class="top-line__action action">
+				<ul class="action__list">				
+					 <li>
+						<span>we ship to whole europe</span>
+						<form action="/" class="currency">
+							<select name="currency" id="currency" class="currency__select">
+								<option  value="EUR" selected>€(EUR)</option>
+								<option  value="USD">$(USD)</option>
+							</select>
+						</form>
+					</li>
+					<li>
+						<a href="#" class="action__icon">
 							<span>
-								<img src="img/icons/search.svg" alt="search">
+								<img src="img/icons/instagramBlack.svg" alt="bag"> 
 							</span>
-						</label>
-						<button type="submit" class="form-search__submit">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="top-line__logo logo">
+				<a href="#">
+					  <img src="img/logo/logo-raespira-copper2.svg" alt="logo">
+
+				</a>
+			</div>
+			<div class="top-line__action action">
+				<ul class="action__list">
+					<!-- 				<li>
+										<form action="/" class="form-search">
+											<input id="search" type="text" class="form-search__input">
+											<label for="search" class="form-search__label">
+												<span>
+													<img src="img/icons/search.svg" alt="search">
+												</span>
+											</label>
+											<button type="submit" class="form-search__submit">
+												<span>
+													<img src="img/icons/search.svg" alt="submit">
+												</span>
+											</button>
+										</form>
+									</li>
+					 -->				
+					 <li>
+						<a href="#" class="action__icon">
 							<span>
-								<img src="img/icons/search.svg" alt="submit">
+								<img src="img/icons/user.svg" alt="user">
 							</span>
-						</button>
-					</form>
-				</li>
-				<li>
-					<a href="#" class="action__icon">
-						<span>
-							<img src="img/icons/user.svg" alt="user">
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="action__icon">
-						<span>
-							<img src="img/icons/basket-black.svg" alt="bag"> 
-						</span>
-					</a>
-				</li>
-				<li>
-					<div class="top-line__burger burger-wrap">
-						<div class="burger" data-activEl="menu">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="action__icon">
+							<span>
+								<img src="img/icons/basket-black.svg" alt="bag"> 
+							</span>
+
+							<div class="mini-basket">
+								<h3 class="mini-basket__title title-3">you`ve got great taste!</h3>
+								<p class="mini-basket__subtitle">The article was added to the basket.</p>
+								<ul class="mini-basket__list">
+									<li>
+										<div class="mini-basket__img">
+											<img src="img/single-page/mats/slider01.png" alt="img">
+										</div>
+										<div class="mini-basket__item-suptitle">premium yoga mat</div>
+										<div class="mini-basket__item-title">Green Marble</div>
+										<div class="mini-basket__item-price">78€</div>
+									</li> 
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<div class="top-line__burger burger-wrap">
+							<div class="burger" data-activEl="menu">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="top-line__row top-line__row_2">
+			<nav class="top-line__menu menu">
+				<ul class="menu__list">
+					<li>
+						<a href="#" class="menu__link">Aroma Diffusers</a>
+					</li>
+					<li>
+						<a href="#" class="menu__link">Premium Yoga Mats</a>
+					</li>
+					
+					<li>
+						<a href="#" class="menu__link">Essential Oils</a>
+					</li>
+					<li>
+						<a href="#" class="menu__link">About us</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
-		<div class="wrapper home">
-			<header class="hero">
-				<div class="hero__img ibg">
+	<div class="wrapper home">
+		<header class="hero">
+			<div class="hero__img ibg">
+				<picture>
+					<source type="image/webp" srcset="img/home/home-bg.webp">
 					<img src="img/home/home-bg.jpg" alt="bg">
+				</picture>
+			</div>
+			<div class="hero__body container">
+				<h1 class="hero__title">
+					THE ART OF <span>BREATH</span>
+				</h1>
+				<div class="hero__btn">
+					<a href="#" class="btn-default">Discover More</a>
 				</div>
-				<div class="hero__body container">
-					<h1 class="hero__title">
-						THE ART OF <span>BREATH</span>
-					</h1>
-					<div class="hero__btn">
-						<a href="#" class="btn-default">Discover More</a>
-					</div>
-				</div>
-			</header>
-			<main class="page">
-				<section class="products-category">
-					<div class="container">
-						<ul class="products-category__list">
-							<li>
-								<a href="#" class="products-category__item">
-									<div class="products-category__img">
-										<img src="img/home/product-category/001.png" alt="img">
-									</div>
-									<div class="products-category__title">
-										Create Healthy Space With
-										<span>Air Purifiers</span>
-									</div>
-								</a>
-							</li>
+			</div>
+		</header>
+		<main class="page">
+			<section class="products-category">
+				<div class="container">
+					<ul class="products-category__list">
 
-							<li>
-								<a href="#" class="products-category__item">
-									<div class="products-category__img">
+						<li>
+							<a href="#" class="products-category__item">
+								<div class="products-category__img">
+									<picture>
+										<source type="image/webp" srcset="img/home/product-category/002.webp">
 										<img src="img/home/product-category/002.png" alt="img">
-									</div>
-									<div class="products-category__title">
-										Release tension with
-										<span>Aroma Diffusers</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="products-category__item active">
-									<div class="products-category__img">
+									</picture>
+								</div>
+								<div class="products-category__title">
+									Release tension with
+									<span>Aroma Diffusers</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="products-category__item">
+								<div class="products-category__img">
+									<picture>
+										<source type="img/single-page/mats/slider01.webp">
+										<img src="img/single-page/mats/slider01.png" alt="img">
+									</picture>
+								</div>
+								<div class="products-category__title">
+									Release tension with
+									<span>Yoga Mats</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="products-category__item active">
+								<div class="products-category__img">
+									<picture>
+										<source type="image/webp" srcset="img/home/product-category/003.webp">
 										<img src="img/home/product-category/003.png" alt="img">
-									</div>
-									<div class="products-category__title">
-										MASTER YOUR BREATH ON 
-										<span>Raespira Mats</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="products-category__item">
-									<div class="products-category__img">
+									</picture>
+								</div>
+								<div class="products-category__title">
+									MASTER YOUR BREATH ON
+									<span>Raespira Mats</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="products-category__item">
+								<div class="products-category__img">
+									<picture>
+										<source type="image/webp" srcset="img/home/product-category/004.webp">
 										<img src="img/home/product-category/004.png" alt="img">
-									</div>
-									<div class="products-category__title">
-										GO 100% NATURAL WITH 
-										<span>Essential Oils</span>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="products-category__hr"></div>
-				</section>
-				<section class="home__content">
-					<div class="container">
-						<section class="video-block">
+									</picture>
+								</div>
+								<div class="products-category__title">
+									GO 100% NATURAL WITH
+									<span>Essential Oils</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="products-category__hr"></div>
+			</section>
+			<section class="home__content">
+				<div class="container">
+					<!-- 						<section class="video-block">
 							<h2 class="video-block__title title-2">Nature is our greatest healer <div>health</div></h2>
 							<div class="video-block__video-wrap">
 								<video class="video-block__video" loop poster="img/video/videoPoster.jpg">
@@ -156,451 +217,641 @@
 									<span class="icon-play_circle_filled"></span>
 								</div>
 							</div>
-						</section>
-						<section class="home__text-block home-text-block">
-							<h2 class="home-text-block__title title-2">
-								Back to Nature. <br>
-								Back to Ourselves.
-								<div>Nature</div>
-							</h2>
-							<div class="home-text-block__items">
-								<div class="home-text-block__item">
-									<div class="home-text-block__text">
-										<p>
-											As we strive to live our best lives, our days get filled with stress. In order to maintain good health is essential to get rid of accumulated cortisol, negative emotions and tension. Unfortunately, hardly ever our work schedules allow us to find <strong>time for ourselves</strong> and <strong>necessary relaxation</strong>.
-										</p>
-									</div>
-									<div class="home-text-block__img ibg">
+						</section> -->
+					<section class="home__text-block home-text-block">
+						<h2 class="home-text-block__title title-2">
+							Back to Nature. <br>
+							Back to Ourselves.
+							<i>Nature</i>
+						</h2>
+						<div class="home-text-block__items">
+							<div class="home-text-block__item">
+								<div class="home-text-block__text">
+									<p>
+										As we strive to live our best lives, our days get filled with stress. In order
+										to maintain good health is essential to get rid of accumulated cortisol,
+										negative emotions and tension. Unfortunately, hardly ever our work schedules
+										allow us to find <strong>time for ourselves</strong> and <strong>necessary
+											relaxation</strong>.
+									</p>
+								</div>
+								<div class="home-text-block__img ibg">
+
+									<picture>
+										<source type="image/webp" srcset="img/home/01.webp">
 										<img src="img/home/01.jpg" alt="img">
-									</div>
-								</div>
-								<div class="home-text-block__item">
-									<div class="home-text-block__text">
-										<p>
-											To support <strong>your inner balance</strong>, we bring nature to your doorsteps through aromatherapy into your busy days. With our essential oils you may create Spa atmosphere easily anywhere at any time. Aroma diffuser makes your space <strong>smells amazing</strong>, the air is moisturised and easier to breath in.
-										</p>
-									</div>
-									<div class="home-text-block__img ibg">
-										<img src="img/home/02.jpg" alt="img">
-									</div>
-								</div>
-								<div class="home-text-block__item">
-									<div class="home-text-block__text">
-										<p>
-											Humans have used aromatherapy over thousands of years to improve the health of a body, mind and spirit. And our essential oils are a daily reminder that <strong>nature is our greatest healer</strong>. 
-										</p>
-									</div>
-									<div class="home-text-block__img ibg">
-										<img src="img/home/03.jpg" alt="img">
-									</div>
+									</picture>
 								</div>
 							</div>
-						</section>
-					</div>
-				</section>
-				<section class="application">
-					<div class="container">
-						<h2 class="application__title title-2">Release Tension With <div>love</div></h2>
-					</div>
-					<div class="application__body">
-						<div class="application__bg ibg">
+							<div class="home-text-block__item">
+								<div class="home-text-block__text">
+									<p>
+										To support <strong>your inner balance</strong>, we bring nature to your
+										doorsteps through aromatherapy into your busy days. With our essential oils you
+										may create Spa atmosphere easily anywhere at any time. Aroma diffuser makes your
+										space <strong>smells amazing</strong>, the air is moisturised and easier to
+										breath in.
+									</p>
+								</div>
+								<div class="home-text-block__img ibg">
+									<picture>
+										<source type="image/webp" srcset="img/home/02.webp">
+										<img src="img/home/02.jpg" alt="img">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+
+			<section class="application">
+				<div class="container">
+					<h2 class="application__title title-2">Release Tension With <i>love</i></h2>
+				</div>
+				<div class="application__body">
+					<div class="application__bg ibg">
+
+						<picture>
+							<source type="image/webp" srcset="img/home/application/bg2.webp">
 							<img src="img/home/application/bg.jpg" alt="bg">
-						</div>
-						<div class="container">
-							<ul class="application__list">
-								<li>
-									<div  class="application__item">
-										<div class="application__tooltip">
-											<div class="application__tooltip-top">
-												<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To enhance muscle and mind relaxation, add 5 - 15 drops of your favourite essential oil into your bath. To spoil yourself even more, add 2 spoons of bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
-											</div>
-											<div class="application__tooltip-bottom"></div>
-										</div>
-										<div class="application__icon">
-											<img src="img/home/application/01.png" alt="icon">
-										</div>
-										<div class="application__item-title">
-											Aroma Diffuser
-										</div>
-									</div>
-								</li>
-								<li>
-									<div  class="application__item">
-										<div class="application__tooltip">
-											<div class="application__tooltip-top">
-												<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To enhance muscle and mind relaxation, add 5 - 15 drops of your favourite essential oil into your bath. To spoil yourself even more, add 2 spoons of bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
-											</div>
-											<div class="application__tooltip-bottom"></div>
-										</div>
-										<div class="application__icon">
-											<img src="img/home/application/02.png" alt="icon">
-										</div>
-										<div class="application__item-title">
-											Breathwork
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div  class="application__item">
-										<div class="application__tooltip">
-											<div class="application__tooltip-top">
-												<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To enhance muscle and mind relaxation, add 5 - 15 drops of your favourite essential oil into your bath. To spoil yourself even more, add 2 spoons of bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
-											</div>
-											<div class="application__tooltip-bottom"></div>
-										</div>
-										<div class="application__icon">
-											<img src="img/home/application/03.png" alt="icon">
-										</div>
-										<div class="application__item-title">
-											Aroma-Bath
-										</div>
-									</div>
-								</li>
-								<li>
-									<div  class="application__item">
-										<div class="application__tooltip">
-											<div class="application__tooltip-top">
-												<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To enhance muscle and mind relaxation, add 5 - 15 drops of your favourite essential oil into your bath. To spoil yourself even more, add 2 spoons of bath salt.
-											</div>
-											<div class="application__tooltip-bottom"></div>
-										</div>
-										<div class="application__icon">
-											<img src="img/home/application/04.png" alt="icon">
-										</div>
-										<div class="application__item-title">
-											Aromateraphy Massage
-										</div>
-									</div>
-								</li>
-								<li>
-									<div  class="application__item">
-										<div class="application__tooltip">
-											<div class="application__tooltip-top">
-												<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To enhance muscle and mind relaxation, add 5 - 15 drops of your favourite essential oil into your bath. To spoil yourself even more, add 2 spoons of bath salt. Soak in the bath and enjoy yourself. Your skin will love you. Soak in the bath and enjoy yourself. Your skin will love you.
-											</div>
-											<div class="application__tooltip-bottom"></div>
-										</div>
-										<div class="application__icon">
-											<img src="img/home/application/05.png" alt="icon">
-										</div>
-										<div class="application__item-title">
-											Aroma Sauna
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
+						</picture>
 					</div>
-				</section>
-				<section class="slider">
 					<div class="container">
-						<h2 class="slider__title">Our Best Sellers</h2>
-						<div class="swiper-container">
+						<ul class="application__list">
+							<li>
+								<div class="application__item">
+									<div class="application__tooltip">
+										<div class="application__tooltip-top">
+											<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To
+											enhance muscle and mind relaxation, add 5 - 15 drops of your favourite
+											essential oil into your bath. To spoil yourself even more, add 2 spoons of
+											bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
+										</div>
+										<div class="application__tooltip-bottom"></div>
+									</div>
+									<div class="application__icon">
+										<img src="img/home/application/01.svg" alt="icon">
+									</div>
+									<div class="application__item-title">
+										Aroma Diffuser
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="application__item">
+									<div class="application__tooltip">
+										<div class="application__tooltip-top">
+											<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To
+											enhance muscle and mind relaxation, add 5 - 15 drops of your favourite
+											essential oil into your bath. To spoil yourself even more, add 2 spoons of
+											bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
+										</div>
+										<div class="application__tooltip-bottom"></div>
+									</div>
+									<div class="application__icon">
+										<img src="img/home/application/022.svg" alt="icon">
+									</div>
+									<div class="application__item-title">
+										Breathwork
+									</div>
+								</div>
+							</li>
 
-						    <div class="swiper-wrapper">
-
-						        <div class="swiper-slide">
-						        	<a href="#" class="product-card">
-						        		<div class="product-card__inner">
-						        			<div class="product-card__img">
-						        				<img src="img/product-card/01.png" alt="product">
-						        			</div>
-						        			<div class="product-card__title">Calming Melissa</div>
-						        			<div class="product-card__text">
-						        				Antibacterial, Stress, 
-						        				Anxiety, Headache, 
-						        				Migreine,Tiredness, Cold
-						        			</div>
-						        		</div>
-						        		<div class="product-card__bottom">
-						        			<object>
-						        				<a href="#" class="product-card__btn">
-						        					I LOVE IT
-						        					<span>
-						        						<img src="img/icons/basket.svg" alt="icon">
-						        					</span>
-						        				</a>
-						        			</object>
-						        			<span class="product-card__price">$30</span>
-						        		</div>
-						        	</a>
-						        </div>
-						        <div class="swiper-slide">
-						        	<a href="#" class="product-card">
-						        		<div class="product-card__inner">
-						        			<div class="product-card__img">
-						        				<img src="img/product-card/01.png" alt="product">
-						        			</div>
-						        			<div class="product-card__title">Calming Melissa</div>
-						        			<div class="product-card__text">
-						        				Antibacterial, Stress, 
-						        				Anxiety, Headache, 
-						        				Migreine,Tiredness, Cold
-						        			</div>
-						        		</div>
-						        		<div class="product-card__bottom">
-						        			<object>
-						        				<a href="#" class="product-card__btn">
-						        					I LOVE IT
-						        					<span>
-						        						<img src="img/icons/basket.svg" alt="icon">
-						        					</span>
-						        				</a>
-						        			</object>
-						        			<span class="product-card__price">$30</span>
-						        		</div>
-						        	</a>
-						        </div>
-						        <div class="swiper-slide"> 
-						        	<a href="#" class="product-card">
-						        		<div class="product-card__inner">
-						        			<div class="product-card__img">
-						        				<img src="img/product-card/01.png" alt="product">
-						        			</div>
-						        			<div class="product-card__title">Calming Melissa</div>
-						        			<div class="product-card__text">
-						        				Antibacterial, Stress, 
-						        				Anxiety, Headache, 
-						        				Migreine,Tiredness, Cold
-						        			</div>
-						        		</div>
-						        		<div class="product-card__bottom">
-						        			<object>
-						        				<a href="#" class="product-card__btn">
-						        					I LOVE IT
-						        					<span>
-						        						<img src="img/icons/basket.svg" alt="icon">
-						        					</span>
-						        				</a>
-						        			</object>
-						        			<span class="product-card__price">$30</span>
-						        		</div>
-						        	</a>
-						        </div>
-						        <div class="swiper-slide"> 
-						        	<a href="#" class="product-card">
-						        		<div class="product-card__inner">
-						        			<div class="product-card__img">
-						        				<img src="img/product-card/01.png" alt="product">
-						        			</div>
-						        			<div class="product-card__title">Calming Melissa</div>
-						        			<div class="product-card__text">
-						        				Antibacterial, Stress, 
-						        				Anxiety, Headache, 
-						        				Migreine,Tiredness, Cold
-						        			</div>
-						        		</div>
-						        		<div class="product-card__bottom">
-						        			<object>
-						        				<a href="#" class="product-card__btn">
-						        					I LOVE IT
-						        					<span>
-						        						<img src="img/icons/basket.svg" alt="icon">
-						        					</span>
-						        				</a>
-						        			</object>
-						        			<span class="product-card__price">$30</span>
-						        		</div>
-						        	</a>
-						        </div>
-						    </div>
-
-						    <div class="slider__btn slider__btn-next">
-						    	<span>
-						    		<img src="img/slider/right-arrow.svg" alt="arrow">
-						    	</span>
-						    </div>
-						    <div class="slider__btn slider__btn-prev">
-						    	<span>
-						    		<img src="img/slider/right-arrow.svg" alt="arrow">
-						    	</span>
-						    </div>
-						</div>
-					</div>
-				</section>
-				<section class="benefit">
-					<div class="container">
-						<h2 class="benefit__title title-2">
-							How Can We Support
-							Your <span>Well-Being Today?</span>
-						</h2>
-						<ul class="benefit__list">
 							<li>
-								<div  class="benefit__item">
-									<div class="benefit__tooltip">
-										<div class="benefit__tooltip-top">
+								<div class="application__item">
+									<div class="application__tooltip">
+										<div class="application__tooltip-top">
+											<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To
+											enhance muscle and mind relaxation, add 5 - 15 drops of your favourite
+											essential oil into your bath. To spoil yourself even more, add 2 spoons of
+											bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
 										</div>
-										<div class="benefit__tooltip-bottom">
-											<ul class="benefit__tooltip-list">
-												<li>
-													valerian
-												</li>
-												<li>sweet marjoram</li>
-												<li>clary sage</li>
-												<li>cedar wood</li>
-												<li>roman chamomile</li>
-												<li>bergamot</li>
-												<li>lavender</li>
-												<li>Aroma diffusers</li>
-											</ul>
-										</div>
+										<div class="application__tooltip-bottom"></div>
 									</div>
-									<div class="benefit__icon">
-										<img src="img/benefit/01.png" alt="icon">
+									<div class="application__icon">
+										<img src="img/home/application/03.svg" alt="icon">
 									</div>
-									<div class="benefit__item-title">
-										Protect 
-										your health
+									<div class="application__item-title">
+										Aroma-Bath
 									</div>
 								</div>
 							</li>
 							<li>
-								<div  class="benefit__item">
-									<div class="benefit__tooltip">
-										<div class="benefit__tooltip-top">
+								<div class="application__item">
+									<div class="application__tooltip">
+										<div class="application__tooltip-top">
+											<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To
+											enhance muscle and mind relaxation, add 5 - 15 drops of your favourite
+											essential oil into your bath. To spoil yourself even more, add 2 spoons of
+											bath salt.
 										</div>
-										<div class="benefit__tooltip-bottom">
-											<ul class="benefit__tooltip-list">
-												<li>
-													valerian
-												</li>
-												<li>sweet marjoram</li>
-												<li>clary sage</li>
-												<li>cedar wood</li>
-												<li>roman chamomile</li>
-												<li>bergamot</li>
-												<li>lavender</li>
-												<li>Aroma diffusers</li>
-											</ul>
-										</div>
+										<div class="application__tooltip-bottom"></div>
 									</div>
-									<div class="benefit__icon">
-										<img src="img/benefit/02.png" alt="icon">
+									<div class="application__icon">
+										<img src="img/home/application/04.svg" alt="icon">
 									</div>
-									<div class="benefit__item-title">
-										Relieve 
-										Tension & Stress
+									<div class="application__item-title">
+										Aromateraphy Massage
 									</div>
 								</div>
 							</li>
 							<li>
-								<div  class="benefit__item">
-									<div class="benefit__tooltip">
-										<div class="benefit__tooltip-top">
+								<div class="application__item">
+									<div class="application__tooltip">
+										<div class="application__tooltip-top">
+											<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To
+											enhance muscle and mind relaxation, add 5 - 15 drops of your favourite
+											essential oil into your bath. To spoil yourself even more, add 2 spoons of
+											bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
+											Soak in the bath and enjoy yourself. Your skin will love you.
 										</div>
-										<div class="benefit__tooltip-bottom">
-											<ul class="benefit__tooltip-list">
-												<li>Aroma diffusers</li>
-												<li>lavender</li>
-												<li>bergamot</li>
-												<li>roman chamomile</li>
-												<li>cedar wood</li>
-												<li>clary sage</li>
-												<li>sweet marjoram</li>
-												<li>valerian</li>
-											</ul>
-										</div>
+										<div class="application__tooltip-bottom"></div>
 									</div>
-									<div class="benefit__icon">
-										<img src="img/benefit/03.png" alt="icon">
+									<div class="application__icon">
+										<img src="img/home/application/05.svg" alt="icon">
 									</div>
-									<div class="benefit__item-title">
-										Promote 
-										Restful Sleep
+									<div class="application__item-title">
+										Aroma Sauna
 									</div>
 								</div>
 							</li>
 							<li>
-								<div  class="benefit__item">
-									<div class="benefit__tooltip">
-										<div class="benefit__tooltip-top">
+								<div class="application__item">
+									<div class="application__tooltip">
+										<div class="application__tooltip-top">
+											<strong>Aroma-Bath</strong> is the gratest reward after a hard day. To
+											enhance muscle and mind relaxation, add 5 - 15 drops of your favourite
+											essential oil into your bath. To spoil yourself even more, add 2 spoons of
+											bath salt. Soak in the bath and enjoy yourself. Your skin will love you.
 										</div>
-										<div class="benefit__tooltip-bottom">
-											<ul class="benefit__tooltip-list">
-												<li>
-													valerian
-												</li>
-												<li>sweet marjoram</li>
-												<li>clary sage</li>
-												<li>cedar wood</li>
-												<li>roman chamomile</li>
-												<li>bergamot</li>
-												<li>lavender</li>
-												<li>Aroma diffusers</li>
-											</ul>
-										</div>
+										<div class="application__tooltip-bottom"></div>
 									</div>
-									<div class="benefit__icon">
-										<img src="img/benefit/04.png" alt="icon">
+									<div class="application__icon">
+										<img src="img/home/application/06.svg" alt="icon">
 									</div>
-									<div class="benefit__item-title">
-										Improve 
-										Concentration
-									</div>
-								</div>
-							</li>
-							<li>
-								<div  class="benefit__item">
-									<div class="benefit__tooltip">
-										<div class="benefit__tooltip-top">
-										</div>
-										<div class="benefit__tooltip-bottom">
-											<ul class="benefit__tooltip-list">
-												<li>
-													valerian
-												</li>
-												<li>sweet marjoram</li>
-												<li>clary sage</li>
-												<li>cedar wood</li>
-												<li>roman chamomile</li>
-												<li>bergamot</li>
-												<li>lavender</li>
-												<li>Aroma diffusers</li>
-											</ul>
-										</div>
-									</div>
-									<div class="benefit__icon">
-										<img src="img/benefit/05.png" alt="icon">
-									</div>
-									<div class="benefit__item-title">
-										Make Your Space 
-										Smell Amazing
+									<div class="application__item-title">
+										Aroma Diffuser Yoga
 									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
-				</section>
-			</main>
-			<footer class="footer">	
+				</div>
+			</section>
+			<section class="slider">
+				<div class="container">
+					<h2 class="slider__title">Our Best Sellers</h2>
+					<div class="swiper-container">
+
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<a href="#" class="product-card__img">
+
+											<picture>
+												<source type="image/webp" srcset="img/product-card/01.webp">
+												<img src="img/product-card/01.png" alt="product">
+											</picture>
+										</a>
+										<div class="product-card__title"><a href="#">Calming Melissa</a></div>
+										<div class="product-card__text">
+											<a href="#">
+												Antibacterial, Stress,
+												Anxiety, Headache,
+												Migreine,Tiredness, Cold
+											</a>
+										</div>
+									</div>
+									<div class="product-card__bottom">
+										<a href="#" class="product-card__btn">
+											I LOVE IT
+											<span>
+												<img src="img/icons/basket.svg" alt="icon">
+											</span>
+										</a>
+										<span class="product-card__price">$30</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider__btn slider__btn-next">
+							<span>
+								<img src="img/slider/right-arrow.svg" alt="arrow">
+							</span>
+						</div>
+						<div class="slider__btn slider__btn-prev">
+							<span>
+								<img src="img/slider/right-arrow.svg" alt="arrow">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benefit">
+				<div class="container">
+					<h2 class="benefit__title title-2">
+						How Can We Support
+						Your <span>Well-Being Today?</span>
+					</h2>
+					<ul class="benefit__list">
+						<li>
+							<div class="benefit__item">
+								<div class="benefit__tooltip">
+									<div class="benefit__tooltip-top">
+									</div>
+									<div class="benefit__tooltip-bottom">
+										<ul class="benefit__tooltip-list">
+											<li>
+												<a href="#">valerian</a>
+											</li>
+											<li><a href="#">sweet marjoram</a></li>
+											<li><a href="#">clary sage</a></li>
+											<li><a href="#">cedar wood</a></li>
+											<li><a href="#">roman chamomile</a></li>
+											<li><a href="#">bergamot</a></li>
+											<li><a href="#">lavender</a></li>
+											<li><a href="#">Aroma diffusers</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="benefit__icon">
+									<img src="img/benefit/01.png" alt="icon">
+								</div>
+								<div class="benefit__item-title">
+									Protect
+									your health
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="benefit__item">
+								<div class="benefit__tooltip">
+									<div class="benefit__tooltip-top">
+									</div>
+									<div class="benefit__tooltip-bottom">
+										<ul class="benefit__tooltip-list">
+											<li>
+												<a href="#">valerian</a>
+											</li>
+											<li><a href="#">sweet marjoram</a></li>
+											<li><a href="#">clary sage</a></li>
+											<li><a href="#">cedar wood</a></li>
+											<li><a href="#">roman chamomile</a></li>
+											<li><a href="#">bergamot</a></li>
+											<li><a href="#">lavender</a></li>
+											<li><a href="#">Aroma diffusers</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="benefit__icon">
+									<img src="img/benefit/02.png" alt="icon">
+								</div>
+								<div class="benefit__item-title">
+									Relieve
+									Tension & Stress
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="benefit__item">
+								<div class="benefit__tooltip">
+									<div class="benefit__tooltip-top">
+									</div>
+									<div class="benefit__tooltip-bottom">
+										<ul class="benefit__tooltip-list">
+											<li>
+												<a href="#">valerian</a>
+											</li>
+											<li><a href="#">sweet marjoram</a></li>
+											<li><a href="#">clary sage</a></li>
+											<li><a href="#">cedar wood</a></li>
+											<li><a href="#">roman chamomile</a></li>
+											<li><a href="#">bergamot</a></li>
+											<li><a href="#">lavender</a></li>
+											<li><a href="#">Aroma diffusers</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="benefit__icon">
+									<img src="img/benefit/03.png" alt="icon">
+								</div>
+								<div class="benefit__item-title">
+									Promote
+									Restful Sleep
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="benefit__item">
+								<div class="benefit__tooltip">
+									<div class="benefit__tooltip-top">
+									</div>
+									<div class="benefit__tooltip-bottom">
+										<ul class="benefit__tooltip-list">
+											<li>
+												<a href="#">valerian</a>
+											</li>
+											<li><a href="#">sweet marjoram</a></li>
+											<li><a href="#">clary sage</a></li>
+											<li><a href="#">cedar wood</a></li>
+											<li><a href="#">roman chamomile</a></li>
+											<li><a href="#">bergamot</a></li>
+											<li><a href="#">lavender</a></li>
+											<li><a href="#">Aroma diffusers</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="benefit__icon">
+									<img src="img/benefit/04.png" alt="icon">
+								</div>
+								<div class="benefit__item-title">
+									Improve
+									Concentration
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="benefit__item">
+								<div class="benefit__tooltip">
+									<div class="benefit__tooltip-top">
+									</div>
+									<div class="benefit__tooltip-bottom">
+										<ul class="benefit__tooltip-list">
+											<li>
+												<a href="#">valerian</a>
+											</li>
+											<li><a href="#">sweet marjoram</a></li>
+											<li><a href="#">clary sage</a></li>
+											<li><a href="#">cedar wood</a></li>
+											<li><a href="#">roman chamomile</a></li>
+											<li><a href="#">bergamot</a></li>
+											<li><a href="#">lavender</a></li>
+											<li><a href="#">Aroma diffusers</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="benefit__icon">
+									<img src="img/benefit/05.png" alt="icon">
+								</div>
+								<div class="benefit__item-title">
+									Make Your Space
+									Smell Amazing
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
 	<div class="footer__bg ibg">
-		<img src="img/footer/footer-bg.jpg" alt="">
+
+		<picture>
+			<source media="(min-width: 768px)" type="image/webp" srcset="img/footer/footer-bg2.webp">
+			<source type="image/webp" srcset="img/footer/footer-mob.jpg">
+			<img src="img/footer/footer-bg2.jpg" alt="bg">
+		</picture>
 	</div>
 	<div class="container">
-		<div class="footer__title">
+		<!-- <div class="footer__title">
 			We Bring Nature 
-			to Your Doorstep
-		</div>
+			to Doorstep
+		</div> -->
 		<div class="footer__content">
 			<div class="footer__row footer__row_1">
 				<div class="footer__logo">
 					<a href="#">
-						<img src="img/logo/footer_logo.png" alt="logo">
+						<img src="img/logo/logo-raespira-white2.svg" alt="logo">
 					</a>
 				</div>
 				<a href="#" class="footer__btn btn-default">Let’s Chat on Instagram</a>
 			</div>
 			<div class="footer__row footer__row_2">
 				<div class="footer__column footer__column_1">
-					<div class="footer__title-link"><a href="#">Shop</a></div>
 					<div class="footer__title-link"><a href="#">About Us</a></div>
-					<div class="footer__title-link"><a href="#">Blog</a></div>
+					<div class="footer__title-link"><a href="#">Shipping & Returns</a></div>
+					<div class="footer__title-link"><a href="#">GDPR</a></div>
+
 				</div>
 				<div class="footer__column footer__column_2">
-					<div class="footer__title-link"><a href="#">Shipping & Returns</a></div>
-					<div class="footer__title-link"><a href="#">Press & Media</a></div>
-					<div class="footer__title-link"><a href="#">GDPR</a></div>
+					<div class="footer__title-link"><a href="#">aroma diffusers</a></div>
+					<div class="footer__title-link"><a href="#">premium yoga mats</a></div>
+					<div class="footer__title-link"><a href="#">essential oils</a></div>
 				</div>
 
 				<div class="footer__column footer__column_3">
@@ -613,8 +864,8 @@
 							raespira_aroma_diffusers
 						</a>
 					</div>
-					<div class="footer__social-link">
-						<a href="#">
+					<div class="footer__social-link footer__social-link_mail">
+						<a href="mailto:info@raespira.com">
 							<span>
 								<img src="img/icons/mail-letter-svgrepo-com.svg" alt="letter">
 							</span>
@@ -639,14 +890,14 @@
 			</div>
 			<div class="footer__row footer__row_3">
 				<div class="footer__copy">
-					Copyright @ 2020. <strong>Raespira International s. r. o.</strong> All rights reserved 
+					Copyright @ 2020. <strong>Raespira International s. r. o.</strong> All rights reserved
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-		</div>
-		<div class="popup" id="popup">
+	</div>
+	<div class="popup" id="popup">
 	<div class="popup_body">
 		<div class="popup_content">
 			<div class="popup__column popup__column_1">
@@ -668,8 +919,9 @@
 		</div>
 	</div>
 </div>
-		
+	
 <script src="js/vendors.min.js"></script>
 <script src="js/app.js"></script>
-	</body>
+</body>
+
 </html>
