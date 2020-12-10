@@ -31,6 +31,17 @@ $(document).ready(function() {
 	}
 	});
 
+			// ==== ADD PADDING-TOP ================================
+			{
+				let wrapper = document.querySelector('.wrapper');
+				if (wrapper) {
+					let headerHeight = document.querySelector('.top-line').clientHeight;
+						wrapper.style.marginTop = headerHeight + 'px';
+				}
+			}
+			// ==== AND ADD PADDING-TOP ================================
+	
+
 // === // Проверка, поддержка браузером формата webp ==================================================================
 
 @@include('#video.js');
