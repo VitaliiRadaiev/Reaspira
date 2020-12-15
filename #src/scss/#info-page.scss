@@ -190,7 +190,6 @@ body.webp {
 .product-advantages {
 	position: relative;
 	font-size: 8px;
-	background-color: #000;
 	& .container {
 		max-width: 950px;
 	}
@@ -211,6 +210,13 @@ body.webp {
 		height: 100%;
 		z-index: -1;
 		display: none;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 0;
+		text-transform: capitalize;
+		font-size: 36px;
 	}
 
 	&__list {
