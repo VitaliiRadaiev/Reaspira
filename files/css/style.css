@@ -3440,27 +3440,16 @@ button.swiper-pagination-bullet {
   position: relative;
   z-index: 50;
   margin-bottom: 33px;
-  padding: 48px 0 0;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edefee+0,edefee+17,edefee+33,c9c9c9+67,bcbcbc+83,afafaf+100 */
-  background: #edefee;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#edefee), color-stop(17%, #edefee), color-stop(33%, #edefee), color-stop(67%, #c9c9c9), color-stop(83%, #bcbcbc), to(#afafaf));
-  background: -o-linear-gradient(top, #edefee 0%, #edefee 17%, #edefee 33%, #c9c9c9 67%, #bcbcbc 83%, #afafaf 100%);
-  background: linear-gradient(to bottom, #edefee 0%, #edefee 17%, #edefee 33%, #c9c9c9 67%, #bcbcbc 83%, #afafaf 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edefee', endColorstr='#afafaf',GradientType=0 );
-  /* IE6-9 */
 }
 
 .application__title {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 
 .application__body {
   position: relative;
   z-index: 2;
+  padding: 28px 0 0;
 }
 
 .application__body .container {
@@ -3474,7 +3463,6 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   z-index: -1;
-  display: none;
 }
 
 .application__list {
@@ -4751,7 +4739,6 @@ body.webp .recipes:before {
 .product-advantages {
   position: relative;
   font-size: 8px;
-  background-color: #000;
 }
 
 .product-advantages .container {
@@ -4766,6 +4753,13 @@ body.webp .recipes:before {
   height: 100%;
   z-index: -1;
   display: none;
+}
+
+.product-advantages__title {
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 36px;
 }
 
 .product-advantages__list {
@@ -6148,8 +6142,11 @@ button.btn-default:active {
   }
 
   .application__title {
-    margin-bottom: 50px;
     text-align: center;
+  }
+
+  .application__body {
+    padding: 0;
   }
 
   .application__bg img {
