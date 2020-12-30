@@ -204,6 +204,13 @@
 		margin-right: 29px;
 		margin-bottom: 10px;
 
+		&:nth-child(2) {
+			flex: 0 1 39px;
+		}
+		&:nth-child(3) {
+			flex: 0 1 78px;
+		}
+
 		& img {
 			width: 100%;
 		}

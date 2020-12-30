@@ -44,6 +44,15 @@
 		letter-spacing: 0.52px;	
 		margin-bottom: 10px;
 		line-height: 1.1em;
+
+		& > a {
+			color: #656565;
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: 0.52px;	
+			line-height: 1.1em;
+		}
+
 	}
 
 	&__title {
@@ -212,6 +221,10 @@
 		}
 	}
 
+}
+
+button.btn-buy {
+	background: transparent;
 }
 
 

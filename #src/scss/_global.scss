@@ -411,3 +411,130 @@ button.btn-default {
 }
 // === and breadcrumb ========================================================================
 
+
+
+.woocommerce {
+	& .woocommerce-order {
+		& .woocommerce-order-details {
+			margin-bottom: 60px;
+		}
+	}
+
+	& .woocommerce-customer-details {
+		& address {
+			line-height: 23px;
+
+			& > p {
+				position: relative;
+
+				&:before {
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
+			& .woocommerce-customer-details--phone {
+				margin-top: 20px;
+				margin-bottom: 6px;
+			}
+		}
+	}
+
+	& .woocommerce-checkout {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+
+		@media (max-width: $md2+px) {
+			display: block;
+		
+		}
+
+		& > div {
+			width: 48%;
+
+			@media (max-width: $md2+px) {
+				width: 100%;
+			
+			}
+
+		}
+
+		& .col2-set {
+			& .col-1 {
+				float: none;
+				width: 100%;
+			}
+			& .col-2 {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		& .input-text  {
+			resize: vertical;
+		}
+
+		& .form-row {
+			margin-bottom: 16px !important;
+		}
+
+		& .woocommerce-checkout-review-order-table {
+			margin-bottom: 50px !important;
+		}
+	}
+
+	& .woocommerce-form-coupon {
+		& .input-text {
+			border-bottom: 1px solid #b4b4b4;
+			height: 40px;
+			font-size: 16px;
+		}
+
+		& .button {
+			color: #496f3b;
+			font-family: $titleFontFamily;
+			font-size: 22px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: .0425em;
+			position: relative;
+			padding: .625em 1.5em;
+			border: 1px solid #496f3b;
+			border-radius: 5px;
+			background: transparent;
+			-webkit-transition: all .2s ease;
+			transition: all .2s ease;
+		
+			@media (min-width: 992px) {
+				&:hover {
+					background: rgba(#496f3b, 0.2);
+				}
+			}
+
+			@media (max-width: $md3+px) {
+				width: 100%;
+			}
+		}
+
+		& .form-row {
+			width: 48%;
+
+			@media (max-width: $md3+px) {
+				float: none;
+				width: 100%;
+
+				&.form-row-first {
+					margin-bottom: 16px;
+				}
+			}
+		}
+
+	}
+}
+
+
+.woocommerce ul.order_details li {
+	margin-bottom: 10px;
+}

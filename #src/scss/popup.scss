@@ -11,6 +11,7 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	transition: all 0.8s ease 0s;
+	padding-top: 90px;
 
 	&.open {
 		opacity: 1;
@@ -69,6 +70,41 @@
 				background-size: cover;
 				min-width: auto;
 
+			}
+		}
+
+		& .close-popup {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 35px;
+			height: 35px;
+			z-index: 5;
+			
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%) rotate(45deg);
+				height: 100%;
+				width: 1px;
+				background: #000;
+			}
+
+			&:after {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%) rotate(-45deg);
+				height: 100%;
+				width: 1px;
+				background: #000;
+			}
+
+			@media (min-width: 768px) {
+				display: none;
 			}
 		}
 	}

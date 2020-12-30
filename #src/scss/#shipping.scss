@@ -1,6 +1,10 @@
 .shipping {
 	&__content {
-		margin: 73px 0 37px;
+		margin: 73px 0 150px;
+
+		@media (max-width: $md2+px) {
+			margin: 73px 0 100px;
+		}
 	}
 
 	&__form {
@@ -83,6 +87,14 @@
 			margin-bottom: 35px;
 		}
 
+		& textarea.textarea {
+				border-bottom: 1px solid #b4b4b4;
+				background: transparent;
+				resize: vertical;
+				width: 100%;
+				min-height: 150px;
+		}
+
 	}
 	&__submit {
 		text-align: center;
@@ -96,29 +108,17 @@
 	border-bottom: 1px solid #b4b4b4;
 	background: transparent;
 
-	&:focus {
-		border-bottom: 1px solid #000;
-	}
-}
-.textarea {
-	border-bottom: 1px solid #b4b4b4;
-	background: transparent;
-	resize: vertical;
-	width: 100%;
-	min-height: 150px;
 
-	&:focus {
-		border-bottom: 1px solid #000;
-	}
 }
+
 .btn-degault {
 
 }
 button.btn-default {
-	border-color: #9e9e9e;
-	color: #333333;
+	// border-color: #9e9e9e;
+	// color: #333333;
 
-	&:active {
-		background: rgba(0,0,0,.2)
-	}
+	// &:active {
+	// 	background: rgba(0,0,0,.2)
+	// }
 }

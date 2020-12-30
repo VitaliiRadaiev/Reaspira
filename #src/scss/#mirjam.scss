@@ -1,0 +1,69 @@
+.mirjam {
+    margin-top: 0 !important;
+
+    & .about-us__content {
+        margin-bottom: 77px;
+    }
+
+    & .products-category {
+		margin-bottom: 45px;
+		padding-bottom: 0.8em;
+
+		@media (min-width: 768px) {
+			margin-bottom: 0;
+		}
+    }
+    
+    & .footer__content {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+
+
+.about-me {
+    margin-bottom: 100px;
+
+    &__body {
+        display: flex;
+
+        @media (max-width: $md3+px) {
+            display: block;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+
+    &__img {
+        flex: 0 0 250px;
+       
+        @media (max-width: $md3+px) {
+            height: 0;
+            padding-bottom: 90%;
+        }
+    }
+
+    &__text-wrap {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #edefee;
+        min-height: 350px;
+    }
+
+    &__title {
+        margin-bottom: 36px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__text {
+        flex: 1 1 auto;
+
+    }
+}

@@ -91,6 +91,12 @@
 		padding: 0 0 3em;
 	}
 
+
+	& .title-2 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
 	& > .container {
 		& > p {
 			font-family: "3satHurme-SemiBold", sans-serif;
@@ -333,6 +339,7 @@
 		height: 100%;
 		z-index: -1;
 		& img {
+			object-position: top;
 			@media (max-width: $md3+px) {
 				object-position: left;
 			}
@@ -384,7 +391,7 @@
 					& .application__tooltip {
 						left: auto;
 						right: 0;
-						transform: translate(0%, -110%);
+						transform: translate(0%, -100%);
 					}
 
 					& .application__tooltip-bottom {
@@ -401,6 +408,77 @@
 							}
 						}
 					}	
+				}
+			}
+
+			@media (max-width: $md3+px) {
+				&:nth-child(3n) {
+					& .application__tooltip {
+						right: 0;
+						transform: translate(0, -110%);
+						left: auto;
+					}
+					& .application__tooltip-bottom {
+						background-position: 84% 0 !important;
+					}
+
+					&:hover {
+
+						& .application__tooltip {
+							transform: translate(0%, -100%);
+						}
+					}
+					
+
+				}
+
+				&:nth-child(3n -2) {
+					& .application__tooltip {
+						left: 0;
+						transform: translate(0, -110%);
+						right: auto;
+					}
+
+					&:hover {
+
+						& .application__tooltip {
+							transform: translate(0%, -100%);
+						}
+					}
+
+				}
+
+			}
+
+			@media (max-width: 575px) {
+				&:nth-child(3n) {
+					& .application__tooltip-bottom {
+						background-position: 70% 0 !important;
+					}
+					
+
+				}
+
+				&:nth-child(3n -2) {
+					& .application__tooltip-bottom {
+						background-position: 30% 0 !important;
+					}
+				}
+			}
+
+			@media (max-width: $md4+px) {
+				&:nth-child(3n) {
+					& .application__tooltip-bottom {
+						background-position: 88% 0 !important;
+					}
+					
+
+				}
+
+				&:nth-child(3n -2) {
+					& .application__tooltip-bottom {
+						background-position: 12% 0 !important;
+					}
 				}
 			}
 
@@ -515,6 +593,10 @@
 			}
 		}
 
+		@media (max-width: $md3+px) {
+			width: 200px;
+		}
+
 		@media (max-width: $md4+px) {
 			font-size: 12px;
 			letter-spacing: 0.35px;
@@ -606,6 +688,10 @@
 
 	& .swiper-slide {
 		height: auto;
+
+		& li {
+			height: 100%;
+		}
 
 		@media (max-width: $md3+px) {
 			height: calc((100% - 60px) / 2);
@@ -896,6 +982,23 @@
 
 			@media (max-width: $md3+px) {
 				flex: 0 1 50%;
+
+				&:last-child {
+					& .benefit__tooltip {
+						left: 50%;
+						right: auto;
+						transform: translate(-50%, 110%);
+						width: calc(100vw - 30px);
+					}
+
+					& .benefit__tooltip-top {
+						
+					}
+
+					& .benefit__item {
+					
+					}	
+				}
 			}
 
 			@media (max-width: 1510px) {
@@ -942,6 +1045,89 @@
 							}
 						}
 					}	
+				}
+			}
+
+			@media (max-width: 575px) {
+				& .benefit__tooltip {
+					max-width: none;
+					width: calc(100vw - 30px);
+				}
+
+				& .benefit__item {
+					&:hover {
+						& .benefit__tooltip {
+							transform: translate(-50%, 100%) !important;
+						}
+					}
+				}
+
+
+				&:nth-child(1) {
+					& .benefit__tooltip-top {
+						background-position: 21% 0 !important;
+					}
+
+					& .benefit__item {
+						&:hover {
+							& .benefit__tooltip {
+								transform: translate(0%, 100%) !important;
+							}
+						}
+					}
+				}
+				&:nth-child(2) {
+					& .benefit__tooltip {
+						right: 0;
+						left: auto;
+						transform: translate(0%,110%);
+					}
+					& .benefit__tooltip-top {
+						background-position: 79% 0 !important;
+					}
+
+					& .benefit__item {
+						&:hover {
+							& .benefit__tooltip {
+								transform: translate(0%, 100%) !important;
+							}
+						}
+					}
+				}
+				&:nth-child(3) {
+					& .benefit__tooltip {
+						left: 0;
+						transform: translate(0%,110%);
+					}
+					& .benefit__tooltip-top {
+						background-position: 21% 0 !important;
+					}
+
+					& .benefit__item {
+						&:hover {
+							& .benefit__tooltip {
+								transform: translate(0%, 100%) !important;
+							}
+						}
+					}
+				}
+				&:nth-child(4) {
+					& .benefit__tooltip {
+						right: 0;
+						left: auto;
+						transform: translate(0%,110%);
+					}
+					& .benefit__tooltip-top {
+						background-position: 79% 0 !important;
+					}
+
+					& .benefit__item {
+						&:hover {
+							& .benefit__tooltip {
+								transform: translate(0%, 100%) !important;
+							}
+						}
+					}
 				}
 			}
 

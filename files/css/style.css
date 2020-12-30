@@ -3465,6 +3465,11 @@ button.swiper-pagination-bullet {
   z-index: -1;
 }
 
+.application__bg img {
+  -o-object-position: top;
+     object-position: top;
+}
+
 .application__list {
   display: -webkit-box;
   display: -ms-flexbox;
