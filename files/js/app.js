@@ -176,6 +176,18 @@ let unlock = true;
 
 const timeout = 800;
 
+let popups = document.querySelectorAll('.popup');
+if(popups.length>0){
+	console.log('test')
+	for(let index = 0; index < popups.length; index++) {
+		popups[index].addEventListener('click', function(e) {
+			if(!e.target.closest('.popup_content')) {
+				popupClose(e.target.closest('.popup'));
+			}
+		})
+	}
+}
+
 if(popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
@@ -292,7 +304,34 @@ document.addEventListener('keydown', function(e) {
 				Element.prototype.mozMatchesSelector;
 		}
 	})();
-// === AND Polyfill ===;
+// === AND Polyfill ===
+
+// cookie
+function setCookie(name,value,days) {
+	var expires = "";
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days*24*60*60*1000));
+		expires = "; expires=" + date.toUTCString();
+	}
+	document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+	let matches = document.cookie.match(new RegExp(
+	  "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+	));
+	return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+if($('.popup').length) {
+	var popupSeen = getCookie('popup_seen');
+	if(!popupSeen) {
+		$('.popup').addClass('open');
+		$('body').addClass('lock');
+		setCookie('popup_seen',true,30);
+	}
+}
+
+// cookie END;
 	
 
 //Select
