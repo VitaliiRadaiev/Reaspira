@@ -1,4 +1,4 @@
-.mirjam {
+.yoga-with-mirjam-buchel  {
     margin-top: 0 !important;
 
     & .about-us__content {
@@ -20,6 +20,13 @@
         flex-direction: column;
         justify-content: flex-end;
     }
+
+    @media (max-width: $md3+px) {
+        & .home-text-block__text {
+            text-align: left !important;
+        }
+    }
+
 }
 
 
@@ -65,5 +72,112 @@
     &__text {
         flex: 1 1 auto;
 
+    }
+}
+
+
+
+
+.testimonials {
+    margin-bottom: 100px;
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 60px;
+    }
+
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        max-width: 600px;
+        margin: 0 auto 40px;
+    }
+
+    &__slider {
+        display: flex;
+
+        & .swiper-container {
+            min-width: 0;
+            flex: 1 1 auto;
+        }
+    }
+
+    &__left {
+        flex: 0 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //background-color: hotpink;
+
+        @media (max-width: $md3+px) {
+            flex: 0 0 40px;
+        }
+    }
+
+    &__right {
+        flex: 0 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //background-color: hotpink;
+
+        @media (max-width: $md3+px) {
+            flex: 0 0 40px;
+        }
+    }
+
+    &__btn {
+        margin-bottom: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        min-width: 40px;
+        cursor: pointer;
+        transition: all .2s ease;
+        font-size:32px;
+        color: rgb(168, 168, 168);
+        @media (min-width: 992px) {
+            &:hover {
+                background-color: rgba(#000, 0.1);
+            }
+        }
+    }
+
+    &__btn-prev {
+        transform: translateX(-15px);
+        & > span {
+            display: block;
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__text {
+        max-width: 750px;
+        margin: 0 auto 20px;
+
+        &.text-content {
+            font-size: 20px;
+            color: rgb(95, 64, 64);
+
+            @media (max-width: $md4+px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__name {
+        color: #496f3b;
+        font-family: $titleFontFamily;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.1em;
+        letter-spacing: 1px;
+    }
+
+
+    &__btn-next {
+        transform: translateX(15px);
     }
 }

@@ -35,8 +35,11 @@ $(document).ready(function() {
 			{
 				let wrapper = document.querySelector('.wrapper');
 				if (wrapper) {
-					let headerHeight = document.querySelector('.top-line').clientHeight;
-						wrapper.style.marginTop = headerHeight + 'px';
+					let topLine = document.querySelector('.top-line');
+					if(topLine) {
+						let headerHeight = topLine.clientHeight;
+							wrapper.style.marginTop = headerHeight + 'px';
+					}
 				}
 			}
 			// ==== AND ADD PADDING-TOP ================================
@@ -48,5 +51,38 @@ $(document).ready(function() {
 @@include('#slider.js');
 @@include('#gallery-slider.js');
 @@include('#recipes.js');
+@@include('##testimonials.js');
+
+
+// == application tooltip handler ============================
+let application = document.querySelector('.application');
+if(application) {
+	window.addEventListener('scroll', () => {
+		if(application.getBoundingClientRect().top < 120) {
+			application.classList.add('tooltip-bottom');
+		} else {
+			application.classList.remove('tooltip-bottom');
+		}
+		
+	})
+}
+// == // application tooltip handler ============================
+
+// == benefit tooltip handler ============================
+{
+let benefit = document.querySelector('.benefit');
+if(benefit) {
+	window.addEventListener('scroll', () => {	
+		if((benefit.getBoundingClientRect().bottom - document.documentElement.clientHeight) > -250) {
+			benefit.classList.add('tooltip-top');
+		} else {
+			benefit.classList.remove('tooltip-top');
+		}
+		
+	})
+}
+}
+// == // benefit tooltip handler ============================
+
 
 });

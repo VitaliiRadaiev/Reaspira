@@ -10,7 +10,6 @@ const timeout = 800;
 
 let popups = document.querySelectorAll('.popup');
 if(popups.length>0){
-	console.log('test')
 	for(let index = 0; index < popups.length; index++) {
 		popups[index].addEventListener('click', function(e) {
 			if(!e.target.closest('.popup_content')) {

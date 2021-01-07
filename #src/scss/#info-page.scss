@@ -161,9 +161,6 @@ body.webp {
 				}
 			}
 
-			& .product-card__text {
-				text-transform: none;
-			}
 		}
 	}
 	&__btn {
@@ -270,7 +267,7 @@ body.webp {
 		letter-spacing: 0.02em;
 		line-height: 1.1em;
 		padding: 0 0.47em;
-
+		white-space: nowrap;
 		&:first-child {
 			flex: 1 1 auto;
 		}

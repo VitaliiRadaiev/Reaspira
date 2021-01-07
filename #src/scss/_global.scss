@@ -295,6 +295,16 @@ button.btn-default {
 	& h5 {}
 	& h6 {}
 
+	color: #496f3b;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.35em;
+	margin-bottom: 1.46em;
+
+	@media (max-width: 525px) {
+		font-size: 16px;
+	}
+
 	& p {
 		color: #496f3b;
 		font-size: 22px;
