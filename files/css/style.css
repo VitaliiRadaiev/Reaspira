@@ -4122,7 +4122,6 @@ button.swiper-pagination-bullet {
   color: #474747;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .benefit__tooltip a:hover {
@@ -4412,7 +4411,6 @@ button.swiper-pagination-bullet {
 }
 
 .online-sessions__text {
-  text-transform: uppercase;
   color: #fff;
   font-size: 20px;
 }
@@ -4500,6 +4498,15 @@ button.swiper-pagination-bullet {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding-left: 65px;
+}
+
+.product-info__column_2 .out-of-stock {
+  color: #496f3b;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .0425em;
 }
 
 .product-info__suptitle {
@@ -4690,6 +4697,8 @@ button.btn-buy {
   min-width: 0;
   width: 100%;
   max-width: 450px;
+  position: relative;
+  margin-left: 25px;
 }
 
 .gallery-slider__top {
@@ -4794,8 +4803,6 @@ button.btn-buy {
   height: 30px;
   min-width: 30px;
   background: #fff;
-  -webkit-box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4805,40 +4812,44 @@ button.btn-buy {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 50%;
   cursor: pointer;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+  font-size: 22px;
+  position: absolute;
+  bottom: 32px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.gallery-slider__thumbs-btn > span {
-  width: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.gallery-slider__thumbs-btn > span img {
-  width: 100%;
-}
-
-.gallery-slider__thumbs-btn.slider__btn-prev {
-  margin-right: 15px;
+.gallery-slider__thumbs-btn:before {
+  font-family: 'icomoon';
+  content: "\e904";
 }
 
 .gallery-slider__thumbs-btn.swiper-button-disabled {
   cursor: auto;
 }
 
-.gallery-slider__thumbs-btn.swiper-button-disabled > span {
-  opacity: 0.5;
+.gallery-slider__thumbs-btn.swiper-button-disabled:before {
+  opacity: 0.2;
+}
+
+.gallery-slider__thumbs-btn_prev {
+  left: -40px;
+}
+
+.gallery-slider__thumbs-btn_prev:before {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  display: block;
+}
+
+.gallery-slider__thumbs-btn_next {
+  right: -40px;
 }
 
 .tabs__nav {
@@ -5888,9 +5899,18 @@ body.webp .recipes:before {
           transform: rotate(-180deg);
 }
 
+.testimonials__photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
 .testimonials__text {
   max-width: 750px;
   margin: 0 auto 20px;
+  position: relative;
 }
 
 .testimonials__text.text-content {
@@ -6429,13 +6449,7 @@ body.webp .recipes:before {
   }
 
   .gallery-slider__thumbs-btn:hover {
-    -webkit-box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.2);
-            box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .gallery-slider__thumbs-btn.swiper-button-disabled:hover {
-    -webkit-box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
-            box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .mini-article__body {
@@ -6804,8 +6818,22 @@ body.webp .recipes:before {
 }
 
 @media (max-width: 767.98px) {
+  .title-2 > i {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
   .title-2 {
     font-size: 28px;
+  }
+
+  .text-content h2 > i {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   .woocommerce .woocommerce-form-coupon .button {
@@ -7539,6 +7567,14 @@ body.webp .recipes:before {
     height: 28px;
   }
 
+  .gallery-slider__thumbs-btn {
+    position: static;
+  }
+
+  .gallery-slider__thumbs-btn_prev {
+    margin-right: 10px;
+  }
+
   .mini-article__column_1 {
     min-height: auto;
   }
@@ -7609,7 +7645,7 @@ body.webp .recipes:before {
 
 @media (max-width: 525px) {
   .title-2 > i {
-    font-size: 60px;
+    font-size: 48px;
   }
 
   .title-3 {
@@ -7621,7 +7657,7 @@ body.webp .recipes:before {
   }
 
   .text-content h2 > i {
-    font-size: 60px;
+    font-size: 48px;
   }
 
   .text-content h3 {

@@ -33,6 +33,15 @@
 			@media (max-width: $md2+px) {
 				padding-left: 0;
 			}
+
+			& .out-of-stock {
+				color: $titleColor;
+				font-family: $titleFontFamily;
+				font-size: 18px;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: .0425em;
+			}
 		}
 	}
 	&__slider {}
@@ -236,9 +245,11 @@ button.btn-buy {
 	min-width: 0;
 	width: 100%;
 	max-width: 450px;
-	
+	position: relative;
+	margin-left: 25px;
 	@media (max-width: $md2+px) {	
 		margin: 0 auto;
+
 	}
 
 
@@ -323,58 +334,58 @@ button.btn-buy {
 		height: 30px;
 		min-width: 30px;
 		background: #fff;
-		box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 50%;
 		cursor: pointer;
 		transition: all .2s ease;
+		font-size: 22px;
+		position: absolute;
+		bottom: 32px;
+		transform: translateY(-50%);
 
-		& > span {
-			width: 12px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			& img {
-				width: 100%;
-			}
+		@media (max-width: 575px) {
+			position: static;
 		}
 
 		@media (min-width: 992px) {
 			&:hover {
-				box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.2);
+				background-color: rgba(#000, 0.1);
 			}
 		}
 
-
-		&.slider__btn-prev {
-			margin-right: 15px;
+		&:before {
+			font-family: 'icomoon';
+			content: "\e904";
+			
 		}
+
 
 		&.swiper-button-disabled {
 			cursor: auto;
 
-			& > span {
-				opacity: 0.5;
-			}
-
-			@media (min-width: 992px) {
-				&:hover {
-					box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
-				}
+			&:before {
+				opacity: 0.2;
 			}
 		}
 	}
 
+	&__thumbs-btn_prev {
+		left: -40px;
+		&:before {
+			transform: rotate(-180deg);
+			display: block;
+		}
 
+		@media (max-width: 575px) {
+			margin-right: 10px;
+		}
+	}
+	&__thumbs-btn_next {
+		right: -40px;
+	}
 }
 
-.slider__btn-next {
-}
-
-.slider__btn-prev {
-}
 
 
 

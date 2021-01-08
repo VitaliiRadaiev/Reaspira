@@ -7,6 +7,9 @@ if(testimonials) {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         autoHeight: true,
+        autoplay: {
+            delay: 15000,
+        },
         navigation: {
                   nextEl: testimonials.querySelector('.testimonials__btn-next'),
                   prevEl: testimonials.querySelector('.testimonials__btn-prev'),

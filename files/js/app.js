@@ -662,8 +662,8 @@ cardVideoHandler();;
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
       navigation: {
-				nextEl: gallerySlider.querySelector('.gallery-slider__thumbs .slider__btn-next'),
-				prevEl: gallerySlider.querySelector('.gallery-slider__thumbs .slider__btn-prev'),
+				nextEl: gallerySlider.querySelector('.gallery-slider__thumbs-btn_next'),
+				prevEl: gallerySlider.querySelector('.gallery-slider__thumbs-btn_prev'),
 			},
     });
     let galleryTop = new Swiper(gallerySlider.querySelector('.gallery-slider__top'), {
@@ -743,6 +743,9 @@ if(testimonials) {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         autoHeight: true,
+        autoplay: {
+            delay: 15000,
+        },
         navigation: {
                   nextEl: testimonials.querySelector('.testimonials__btn-next'),
                   prevEl: testimonials.querySelector('.testimonials__btn-prev'),
