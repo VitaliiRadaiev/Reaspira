@@ -357,17 +357,10 @@ button.btn-buy {
 		&:before {
 			font-family: 'icomoon';
 			content: "\e904";
-			
+			opacity: 0.2;
 		}
 
 
-		&.swiper-button-disabled {
-			cursor: auto;
-
-			&:before {
-				opacity: 0.2;
-			}
-		}
 	}
 
 	&__thumbs-btn_prev {

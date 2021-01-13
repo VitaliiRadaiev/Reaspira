@@ -926,6 +926,133 @@ strong {
   margin-bottom: 10px;
 }
 
+.my-account .hero {
+  margin-bottom: 120px;
+}
+
+.my-account .woocommerce-form.woocommerce-form-login .woocommerce-Input {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #b4b4b4;
+  background: 0 0;
+}
+
+.my-account .woocommerce-form.woocommerce-form-login .woocommerce-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #496f3b;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.0425em;
+  position: relative;
+  padding: 0.625em 1.5em;
+  border: 1px solid #496f3b;
+  border-radius: 5px;
+  white-space: nowrap;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  background: transparent;
+}
+
+.my-account .woocommerce-form.woocommerce-form-login .woocommerce-button:hover {
+  background: rgba(73, 111, 59, 0.1);
+}
+
+.woocommerce-button,
+.woocommerce-Button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #496f3b !important;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.0425em;
+  position: relative;
+  padding: 0.625em 1.5em;
+  border: 1px solid #496f3b !important;
+  border-radius: 5px;
+  white-space: nowrap;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  background: transparent !important;
+}
+
+.woocommerce-button:hover,
+.woocommerce-Button:hover {
+  background: rgba(73, 111, 59, 0.1) !important;
+}
+
+.cart .hero {
+  margin-bottom: 120px;
+}
+
+.woocommerce-cart-form table.shop_table tbody #coupon_code {
+  font-size: 18px;
+}
+
+.checkout .hero {
+  margin-bottom: 120px;
+}
+
+.checkout .shipping__content {
+  margin-bottom: 120px;
+}
+
+.woocommerce-page form .form-row .input-text {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #b4b4b4;
+  background: 0 0;
+}
+
+.woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout {
+  border: none;
+}
+
+.woocommerce-MyAccount-navigation-link--customer-logout > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #496f3b;
+  font-family: "Luxia-Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.0425em;
+  position: relative;
+  padding: 0.625em 1.5em;
+  border: 1px solid #496f3b;
+  border-radius: 5px;
+  white-space: nowrap;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  background: transparent;
+}
+
+.woocommerce-MyAccount-navigation-link--customer-logout > a:hover {
+  background: rgba(73, 111, 59, 0.1);
+}
+
 body.compensate-for-scrollbar {
   overflow: hidden;
 }
@@ -3114,6 +3241,33 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 
+.action__icon .quantity-product {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18px;
+  min-width: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #496f3b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 0 3px;
+}
+
+.action__icon.active .mini-basket {
+  display: block;
+}
+
 .action__icon > span {
   height: 20px;
 }
@@ -3879,9 +4033,9 @@ button.swiper-pagination-bullet {
 }
 
 .product-card__img {
-  height: 212px;
+  height: 153px;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 11px;
   display: block;
 }
 
@@ -4115,7 +4269,6 @@ button.swiper-pagination-bullet {
   color: #474747;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .benefit__tooltip a {
@@ -4827,13 +4980,6 @@ button.btn-buy {
 .gallery-slider__thumbs-btn:before {
   font-family: 'icomoon';
   content: "\e904";
-}
-
-.gallery-slider__thumbs-btn.swiper-button-disabled {
-  cursor: auto;
-}
-
-.gallery-slider__thumbs-btn.swiper-button-disabled:before {
   opacity: 0.2;
 }
 
@@ -5561,19 +5707,15 @@ body.webp .recipes:before {
   width: 100%;
 }
 
-.shipping__content {
+.shipping-returns__content {
   margin: 73px 0 150px;
 }
 
-.shipping .shipping__form {
+.shipping-returns .shipping__form {
+  padding: 100px 0 10px;
+  background-color: #edefee;
   padding-bottom: 10px;
   margin-bottom: 0;
-}
-
-.shipping__form {
-  padding: 100px 0 100px;
-  background-color: #edefee;
-  margin-bottom: 60px;
 }
 
 .advantages {
@@ -5673,6 +5815,10 @@ body.webp .recipes:before {
   background: transparent;
 }
 
+.shipping__form {
+  margin-bottom: 60px;
+}
+
 .breathwork .breadcrumb {
   margin-bottom: -4px;
 }
@@ -5743,20 +5889,30 @@ body.webp .recipes:before {
   text-transform: uppercase;
 }
 
-.yoga-with-mirjam-buchel {
+.yoga-with-mirjam-buchel,
+.mirjam-buchel {
   margin-top: 0 !important;
 }
 
-.yoga-with-mirjam-buchel .about-us__content {
+.yoga-with-mirjam-buchel .about-us__content,
+.mirjam-buchel .about-us__content {
   margin-bottom: 77px;
 }
 
-.yoga-with-mirjam-buchel .products-category {
+.yoga-with-mirjam-buchel .products-category,
+.mirjam-buchel .products-category {
   margin-bottom: 45px;
   padding-bottom: 0.8em;
 }
 
-.yoga-with-mirjam-buchel .footer__content {
+.yoga-with-mirjam-buchel .shipping__form,
+.mirjam-buchel .shipping__form {
+  background-color: #edefee;
+  padding: 100px 0 100px;
+}
+
+.yoga-with-mirjam-buchel .footer__content,
+.mirjam-buchel .footer__content {
   min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5900,8 +6056,8 @@ body.webp .recipes:before {
 }
 
 .testimonials__photo {
-  height: 100px;
-  width: 100px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
   margin: 0 auto 30px;
   overflow: hidden;
@@ -6219,7 +6375,6 @@ body.webp .recipes:before {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.35em;
-  margin-bottom: 1.46em;
 }
 
 .footer.mirjam_footer .container {
@@ -6373,7 +6528,8 @@ body.webp .recipes:before {
     margin-bottom: 0;
   }
 
-  .yoga-with-mirjam-buchel .products-category {
+  .yoga-with-mirjam-buchel .products-category,
+  .mirjam-buchel .products-category {
     margin-bottom: 0;
   }
 }
@@ -6652,6 +6808,22 @@ body.webp .recipes:before {
     width: 100%;
   }
 
+  .my-account .hero {
+    margin-bottom: 90px;
+  }
+
+  .cart .hero {
+    margin-bottom: 90px;
+  }
+
+  .checkout .hero {
+    margin-bottom: 90px;
+  }
+
+  .checkout .shipping__content {
+    margin-bottom: 90px;
+  }
+
   .select__title {
     font-size: 18px;
   }
@@ -6808,7 +6980,7 @@ body.webp .recipes:before {
     max-height: 100%;
   }
 
-  .shipping__content {
+  .shipping-returns__content {
     margin: 73px 0 100px;
   }
 
@@ -6847,6 +7019,22 @@ body.webp .recipes:before {
 
   .woocommerce .woocommerce-form-coupon .form-row.form-row-first {
     margin-bottom: 16px;
+  }
+
+  .my-account .hero {
+    margin-bottom: 60px;
+  }
+
+  .cart .hero {
+    margin-bottom: 60px;
+  }
+
+  .checkout .hero {
+    margin-bottom: 60px;
+  }
+
+  .checkout .shipping__content {
+    margin-bottom: 60px;
   }
 
   .popup_body {
@@ -7231,8 +7419,8 @@ body.webp .recipes:before {
     font-size: 18px;
   }
 
-  .shipping__form {
-    padding: 50px 0 50px;
+  .shipping-returns .shipping__form {
+    padding: 50px 0 10px;
   }
 
   .advantages {
@@ -7248,7 +7436,13 @@ body.webp .recipes:before {
     padding-bottom: 40px;
   }
 
-  .yoga-with-mirjam-buchel .home-text-block__text {
+  .yoga-with-mirjam-buchel .shipping__form,
+  .mirjam-buchel .shipping__form {
+    padding: 60px 0 60px;
+  }
+
+  .yoga-with-mirjam-buchel .home-text-block__text,
+  .mirjam-buchel .home-text-block__text {
     text-align: left !important;
   }
 
@@ -7281,6 +7475,11 @@ body.webp .recipes:before {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40px;
             flex: 0 0 40px;
+  }
+
+  .testimonials__photo {
+    height: 150px;
+    width: 150px;
   }
 
   .video-block__title {
@@ -7830,8 +8029,14 @@ body.webp .recipes:before {
     font-size: 4px;
   }
 
+  .testimonials__photo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
   .testimonials__text.text-content {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .video-block__video-wrap {

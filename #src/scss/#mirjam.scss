@@ -1,4 +1,4 @@
-.yoga-with-mirjam-buchel  {
+.yoga-with-mirjam-buchel, .mirjam-buchel  {
     margin-top: 0 !important;
 
     & .about-us__content {
@@ -12,6 +12,15 @@
 		@media (min-width: 768px) {
 			margin-bottom: 0;
 		}
+    }
+
+    & .shipping__form {
+        background-color: #edefee;
+        padding: 100px 0 100px;
+
+        @media (max-width: $md3+px) {
+            padding: 60px 0 60px; 
+        }
     }
     
     & .footer__content {
@@ -154,11 +163,22 @@
     }
 
     &__photo {
-        height: 100px;
-        width: 100px;
+        height: 180px;
+        width: 180px;
         border-radius: 50%;
         margin: 0 auto 30px;
         overflow: hidden;
+
+        @media (max-width: $md3+px) {
+            height: 150px;
+            width: 150px;
+        }
+
+        @media (max-width: $md4+px) {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -171,7 +191,7 @@
             color: rgb(95, 64, 64);
 
             @media (max-width: $md4+px) {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }

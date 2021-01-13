@@ -45,13 +45,13 @@
 					autoHeight: false,
 				},
 				768: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					spaceBetween: 20,
 					slidesPerColumn: 1,
 				},
 				992: {
-					slidesPerView: 3,
-					spaceBetween: 25,
+					slidesPerView: 4,
+					spaceBetween: 20,
 					slidesPerColumn: 1,
 				},
 
