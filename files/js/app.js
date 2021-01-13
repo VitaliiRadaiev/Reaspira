@@ -754,6 +754,14 @@ if(testimonials) {
 };
 
 
+// == close basket ============================
+document.body.addEventListener('click', (e) => {
+	if(!e.target.closest('.mini-basket')) {
+		document.querySelector('.mini-basket').closest('.action__icon').classList.remove('active')
+	}
+})
+// == // close basket ============================
+
 // == application tooltip handler ============================
 let application = document.querySelector('.application');
 if(application) {
