@@ -34,12 +34,13 @@
 	&__logo {
 		flex: 0 0 200px;
 		margin-left: 30px;
-		margin-right: 30px;
+		margin-right: 24%;
 		max-width: 200px;
 
 		@media (max-width: $md2+px) {
 			max-width: 165px;
 			flex: 0 0 165px;
+			margin-right: 30px;
 		}
 
 		@media (max-width: 575px) {
@@ -56,7 +57,7 @@
 
 	}
 	&__menu {
-		margin: 0 20px 0 17%;
+		margin: 0 20px 0 20px;
 
 		@media (max-width: $md2+px) {
 			background: #fff;
@@ -308,14 +309,57 @@
 	background: #fff;
 	border: 1px solid #656565;
 	display: none;
+	padding: 15px;
 	animation: miniBasketAnim .3s linear;
 
+	@media (max-width: $md4+px) {
+		right: -50px;
+	}
+
+	& .mini-basket {
+		position: relative;
+		border: none;
+		width: 100%;
+		padding: 0;
+
+		@media (max-width: $md4+px) {
+			right: 0px;
+		}
+	}
+
+	&._is-scroll {
+		&:before {
+			position: absolute;
+			font-family: 'icomoon';
+			content: "\e900";
+			left: -2px;
+			bottom: 5px;
+			font-size: 30px;
+			color: $titleColor;
+			animation: icon-scroll-anim .8s ease infinite;
+			z-index: 10;
+		}
+	}
+
+	@keyframes icon-scroll-anim {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-5px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
 
 	&__title {
-		margin-bottom: 10px;
+		margin-bottom: 10px !important;
 		color: #496f3b;
 		text-transform: uppercase;
-		margin-top: 10px;
+		margin-top: 0px !important;
+		font-size: 20px !important;
+		font-family: "3satHurme-SemiBold",sans-serif !important;
 	}
 	&__subtitle {
 		color: #656565;

@@ -118,7 +118,7 @@
 	&__list {
 		display: flex;
 		margin: 0 -1.5em;
-
+		justify-content: space-between;
 		@media (max-width: $md3+px) {
 			flex-wrap: wrap;
 		}
@@ -126,10 +126,10 @@
 		& > li {
 			flex: 0 1 33.333%;
 			padding: 0 1.5em;
-
+			max-width: 285px;
 			@media (max-width: $md3+px) {
 				flex: 0 1 100%;
-
+				max-width: none;
 				&:nth-child(even) {
 					background: rgba(62, 101, 99, 0.1);
 				}
@@ -215,7 +215,7 @@
 		background-color: #f5e7df;
 
 		@media (max-width: $md3+px) {
-			display: none;
+			transform: translateY(28px);
 		}
 	}
 }
@@ -229,7 +229,6 @@
 		margin-bottom: 91px;
 
 		@media (max-width: $md3+px) {
-			text-align: center;
 			margin-bottom: 50px;
 		}
 	}
@@ -792,14 +791,14 @@
 		padding: 0 15px;
 
 		@media (max-width: $md3+px) {
-			 height: 700px;
-			 padding: 0;
-			 margin: 0;
+			&:not(.bottom-slider) {
+				padding-bottom: 50px;
+			}
 		}
 
-		@media (max-width: $md4+px) {
-				 height: 570px;
-		}
+		// @media (max-width: $md4+px) {
+		// 		 height: 570px;
+		//}
 	}
 
 	& .swiper-slide {
@@ -807,11 +806,6 @@
 
 		& li {
 			height: 100%;
-		}
-
-		@media (max-width: $md3+px) {
-			height: calc((100% - 60px) / 2);
-			margin-bottom: 20px;
 		}
 	}
 
@@ -853,8 +847,8 @@
 			}
 		}
 
-		@media (max-width: $md4+px) {
-			top: 52%;
+		@media (max-width: $md3+px) {
+			top: 96%;
 		}
 
 		& > span {
@@ -891,13 +885,19 @@
 
 .product-card {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column; 
 	height: 100%;
 	&__inner {
 		padding: 31px 15px 25px;
 		background-color: #edefee;
 		text-align: center;
+		min-height: 264px;
 		flex: 1 1 auto;
+
+		@media (max-width: $md4+px) {
+			min-height: 210px;
+		}
+
 	}
 	&__img {
 		height: 153px;
@@ -962,7 +962,7 @@
 	}
 	&__btn {
 		display: inline-flex;
-		color: #496f3b;
+		color: #496f3b !important;
 		font-family: $titleFontFamily;
 		font-size: 16px;
 		font-weight: 400;

@@ -51,6 +51,9 @@ function select_item(select) {
 	const select_selected_option = select.querySelector('option:checked');
 	const select_selected_text = select_selected_option.text;
 	const select_type = select.getAttribute('data-type');
+	const select_option_url = select_selected_option.dataset.flag;
+
+	
 
 	if (select_items) {
 		select_items.remove();
@@ -60,9 +63,9 @@ function select_item(select) {
 	if (select_type == 'input') {
 		select_type_content = '<div class="select__value icon-select-arrow"><input autocomplete="off" type="text" name="form[]" value="' + select_selected_text + '" data-error="Ошибка" data-value="' + select_selected_text + '" class="select__input"></div>';
 	} else {
-		select_type_content = '<div class="select__value icon-select-arrow"><span>' + select_selected_text + '</span></div>';
+		select_type_content = '<div class="select__value icon-select-arrow"><span><img src="' + select_option_url +'" alt=""></img>' + select_selected_text + '</span></div>';
 	}
-
+	
 	select_parent.insertAdjacentHTML('beforeend',
 		'<div class="select__item">' +
 		'<div class="select__title">' + select_type_content + '</div>' +
@@ -126,9 +129,11 @@ function select_get_options(select_options) {
 		for (let index = 0; index < select_options.length; index++) {
 			const select_option = select_options[index];
 			const select_option_value = select_option.value;
+			const select_option_url = select_option.dataset.flag;
+
 			if (select_option_value != '') {
 				const select_option_text = select_option.text;
-				select_options_content = select_options_content + '<div data-value="' + select_option_value + '" class="select__option">' + select_option_text + '</div>';
+				select_options_content = select_options_content + '<div data-value="' + select_option_value + '" class="select__option"><img src="' + select_option_url +  '" alt="">' + select_option_text + '</div>';
 			}
 		}
 		return select_options_content;

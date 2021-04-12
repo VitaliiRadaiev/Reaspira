@@ -60,6 +60,35 @@ document.body.addEventListener('click', (e) => {
 		document.querySelector('.mini-basket').closest('.action__icon').classList.remove('active')
 	}
 })
+{
+	let topLine = document.querySelector('.top-line');
+	if(topLine) {
+		let observer = new MutationObserver(mutationRecords => {
+			let basket = document.querySelector('.mini-basket');
+			let list = basket.querySelector('.mini-basket__list');
+			if(list.children.length >= 2) {
+				basket.classList.add('_is-scroll');
+			} else {
+				basket.classList.remove('_is-scroll');
+			}
+		});
+		observer.observe(topLine, {
+		childList: true, 
+		subtree: true, 
+		});
+	}
+
+
+	let basket = document.querySelector('.mini-basket');
+	if(basket) {
+		let list = basket.querySelector('.mini-basket__list');
+		if(list.children.length >= 2) {
+			basket.classList.add('_is-scroll');
+		} else {
+			basket.classList.remove('_is-scroll');
+		}
+	}
+}
 // == // close basket ============================
 
 // == application tooltip handler ============================

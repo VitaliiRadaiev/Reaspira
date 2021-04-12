@@ -100,11 +100,29 @@
 				resize: vertical;
 				width: 100%;
 				min-height: 150px;
+
+				&::placeholder {
+					color: #9e9e9e;
+				}
+		}
+
+		& .wpcf7-not-valid-tip {
+			margin-top: 2px;
+			font-size: 0.7em;
 		}
 
 	}
 	&__submit {
 		text-align: center;
+
+		& .btn-default {
+			background-color: transparent;
+			border-color: #b4b4b4;
+			color: #b4b4b4;
+			&:hover {
+				background-color: #fff;
+			}
+		}
 	}
 }
 .input {
@@ -115,10 +133,19 @@
 	border-bottom: 1px solid #b4b4b4;
 	background: transparent;
 
+	&::placeholder {
+		color: #9e9e9e;
+	}
 
 }
 
 
 .shipping__form {
 	margin-bottom: 60px;
+	background-color: #edefee;
+	padding: 100px 0 100px;
+
+	@media (max-width: $md3+px) {
+		padding: 60px 0 60px; 
+	}
 }

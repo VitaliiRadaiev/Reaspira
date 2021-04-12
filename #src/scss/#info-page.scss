@@ -131,6 +131,7 @@ body.webp {
 			flex: 0 1 25%;
 			padding: 0 10px;
 			margin-bottom: 54px;
+			line-height: normal;
 
 			@media (max-width: $md2+px) {
 				flex: 0 1 33.333%;
@@ -627,7 +628,7 @@ body.webp {
 				right: -16px;
 				transform: translateY(-50%);
 				font-family: 'icomoon';
-				content: "\e905";
+				content: "\e907";
 				color: #999999;
 				font-size: 48px;
 			}
